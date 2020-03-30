@@ -16,15 +16,12 @@ img{
     position:fixed;
     font-weight:bold;
 }
-
 .text{
     color:white;
     font-size:1.4em;
     line-height: 1.4;
     font-family:"courier new";
-    z-index:2;
 }
-
 .title{
     color:white;
     font-size:1.4em;
@@ -76,11 +73,13 @@ a:visited{
     display:inline-block;
 }
 
+
 @media only screen and (max-width: 720px) {
     .grid{
         width:96%;
         margin:auto;
         display:grid;
         grid-template-columns: 1fr;
+
     }
 }
