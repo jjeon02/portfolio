@@ -1,0 +1,72 @@
+body{
+    background: #ffffff;
+}
+.nav{
+    width:100vw;
+    left:0;
+    right:0;
+    top:0;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    margin:0;
+    position:fixed;
+    z-index:2;
+}
+
+.chosen{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0.6em 0.6em;
+    text-decoration: none;
+    float: left;
+    color:black;
+    background-color:#dddddd;
+}
+
+.nav a{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0.6em 0.6em;
+    text-decoration: none;
+    float: left;
+    color:black;
+}
+
+.nav a:hover{
+    color: black;
+    background-color:#dddddd;
+    transition: background-color 0.3s ease;
+}
+.nav a:active{
+    color: black;
+    background-color:#cccccc;
+    transition: background-color 0.3s ease;
+}
+.nav .icon{
+    display:none;
+}
+
+h1{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 12em;
+}
+
+h6{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+p{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+
+}
