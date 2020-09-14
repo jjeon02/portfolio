@@ -11,15 +11,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a>Brand Identity</a>
-            <a>RISD</a>
-            <a>Typography</a>
-            <a>Editorial</a>
-        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a class="home active">Home</a>
+            <a class="location">Brand Identity</a>
+            <a class="location">RISD</a>
+            <a class="location">Typography</a>
+            <a class="location">Editorial Design</span>
+            <a href="javascript:void(0);" class="menu" onclick="myFunction()"> 
+                menu
+            </a>
+          </div>
         
-       <h1>Hello World!</h1>
+        <div class="navmargin"></div>
+        <div class="circle"></div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
 
     </body>
 </html>
