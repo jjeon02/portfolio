@@ -2,12 +2,38 @@ body{
     background: #ffffff;
 }
 
-img{
-    width:100%;
-    margin:0;
-    left:0;right:0;
+/* IMGS */
+.titleimg{
+    width:48%;
+    margin:  2em auto 2em auto;
+    animation: appearance 0.6s linear;
 }
 
+.slide{
+    width:100%;
+    margin:0px;
+    box-sizing:border-box;
+    left:0;right:0;
+    position:relative;
+    animation: appearance 0.6s linear;
+}
+
+img{
+    width:100%;
+}
+
+@keyframes appearance{
+    0%{
+        transform: translateY(10px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+/* NAVIGATION BAR */
 .nav{
     width:100vw;
     background-color: #ffffff;
@@ -16,7 +42,7 @@ img{
     top:0;left:0;right:0;
     border-bottom: 1px solid black;
     box-sizing:border-box;
-    height: 3em;
+    height: 2.9em;
 }
 
 .nav a{
@@ -45,9 +71,15 @@ img{
     transition: background-color 0.3s ease;
 }
 
+.current{
+    background-color:#dddddd;
+}
+
 .navmargin{
     height: 3em;
 }
+
+/* TYPOGRAPHY */
 
 h2{
     font-family: 'Helvetica', sans-serif;
@@ -55,49 +87,109 @@ h2{
     font-size: 2.4em;
     text-decoration: none;
     color:black;
+    margin:0;
 }
-h3{
+
+h6{
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     text-decoration: none;
     color:black;
+    margin:0;
 }
+
 p, ul{
     font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
     text-decoration: none;
     color:black;
+    margin:0;
 }
 
+/* Blocks and DIVS */
+.section, .text{
+    display:flex;
+    width:100%;
+    animation: appearance 0.6s linear;
+}
+
+.text{
+    border-top: 1px dashed black;
+    margin: 0 0 6em 0;
+    padding: 0;
+}
+
+.innerbox{
+    width:100%;
+    padding: 2em;
+    box-sizing:border-box;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background:none;
+}
+
+::-webkit-scrollbar-track {
+    display:none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE */
+
 @media screen and (min-width:601px){
+    /* NAVIGATION BAR */
     .menu{
         display:none;
     }
 
-    ::-webkit-scrollbar {
-        width: 10px;
-        background:none;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: none; 
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: #dddddd; 
+    .textbox{
+        margin: auto 0 auto 0;
+        transform: translateY(50%);
     }
 }
 @media screen and (max-width:600px){
+
+    /* IMGS */
+    .titleimg{
+        width:96%;
+        margin:  2em auto 2em auto;
+        animation: appearance 0.6s linear;
+    }
+        
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* div */
+    .text, .section{
+        display:inline-block;
+        width:100%;
+    }
+
+    .innerbox{
+        padding: 1.2em 2em 1.2em 2em;
+    }
+
+    .textbox{
+        margin: auto 0 auto 0;
+    }
+
+    /* NAVIGATION BAR */
     .menu{
         display:block;
         float:right;
     }
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
     .menu:hover{
         color: black;
         background-color:#dddddd;
@@ -108,6 +200,7 @@ p, ul{
 
     .nav.responsive{
         left:0;
+        border-bottom: 1px solid black;
     }
 
     .nav.responsive .menu {
@@ -123,6 +216,14 @@ p, ul{
         float: none;
         display: block;
         text-align: left;
+        background-color: #ffffff;
+    }
+
+    .nav.responsive a:hover{
+        background-color:#dddddd;;
+    }
+    .editorial{
+        border-bottom: 1px solid black;
     }
 }
 
