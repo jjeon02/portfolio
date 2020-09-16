@@ -1,6 +1,13 @@
 body{
     background: #ffffff;
 }
+
+img{
+    width:100%;
+    margin:0;
+    left:0;right:0;
+}
+
 .nav{
     width:100vw;
     background-color: #ffffff;
@@ -9,6 +16,7 @@ body{
     top:0;left:0;right:0;
     border-bottom: 1px solid black;
     box-sizing:border-box;
+    height: 3em;
 }
 
 .nav a{
@@ -18,7 +26,7 @@ body{
 }
 
 .nav a, .menu{
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     text-decoration: none;
@@ -31,23 +39,64 @@ body{
     transition: background-color 0.3s ease;
 }
 
-
 .nav a:active{
     color: black;
     background-color:#cccccc;
     transition: background-color 0.3s ease;
 }
 
+.navmargin{
+    height: 3em;
+}
+
+h2{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 800;
+    font-size: 2.4em;
+    text-decoration: none;
+    color:black;
+}
+h3{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:black;
+}
+p, ul{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:black;
+}
 
 @media screen and (min-width:601px){
     .menu{
         display:none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        background:none;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: none; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #dddddd; 
     }
 }
 @media screen and (max-width:600px){
     .menu{
         display:block;
         float:right;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
     .menu:hover{
         color: black;
