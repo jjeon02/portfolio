@@ -1,21 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #ffffff;
-    scroll-behavior: smooth;
 }
 
 /* IMGS */
 .titleimg{
     width:48%;
     margin:  2em auto 2em auto;
-    animation: appearance 0.6s linear;
-}
-
-.slide{
-    width:100%;
-    margin:0px;
-    box-sizing:border-box;
-    left:0;right:0;
-    position:relative;
     animation: appearance 0.6s linear;
 }
 
@@ -80,6 +74,20 @@ img{
     height: 3em;
 }
 
+/* TOP ICON */
+
+.arrow{
+    width: 2em;
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 50%;
+    border: 1px solid black;
+    position:fixed;
+    bottom: 1em;
+    right:1em;
+    z-index: 4;
+}
+
 /* TYPOGRAPHY */
 
 h2{
@@ -92,28 +100,27 @@ h2{
 }
 
 h6{
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
-    font-size: 1.2em;
-    text-decoration: none;
-    color:black;
-    margin:0;
 }
 
 a{
     color: black;
 }
 
-p, ul{
-    font-family: 'Gothic A1', sans-serif;
+p,ul{
     font-weight: 400;
+}
+
+h6, p, ul{
+    font-family: 'Gothic A1', sans-serif;
     font-size: 1.2em;
+    line-height: 1.8em;
     text-decoration: none;
     color:black;
     margin:0;
 }
 
-/* Blocks and DIVS */
+/* DIVS */
 .section, .text{
     display:flex;
     width:100%;
@@ -122,8 +129,17 @@ p, ul{
 
 .text{
     border-top: 1px dashed black;
-    margin: 12em 0 6em 0;
-    padding: 0;
+    margin: 0 0 6em 0;
+    padding: 2em 0 0 0;
+}
+
+.slide{
+    width:100%;
+    margin:0px;
+    box-sizing:border-box;
+    left:0;right:0;
+    position:relative;
+    animation: appearance 0.6s linear;
 }
 
 .innerbox{
@@ -132,23 +148,25 @@ p, ul{
     box-sizing:border-box;
 }
 
+
+
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {
     width: 12px;
-    background:none;
 }
 
 ::-webkit-scrollbar-track {
-    display:none;
+    background:#ddd;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #888;
     border-radius: 12px;
 }
 
 /* RESPONSIVE */
+
 
 @media screen and (min-width:601px){
     /* NAVIGATION BAR */
@@ -156,12 +174,21 @@ p, ul{
         display:none;
     }
 
-    .textbox{
-        margin: auto 0 auto 0;
-        transform: translateY(50%);
+    .centertext{
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
+
 }
 @media screen and (max-width:600px){
+
+    .centertext{
+        top: 0;
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 
     /* IMGS */
     .titleimg{
@@ -185,8 +212,8 @@ p, ul{
         padding: 1.2em 2em 1.2em 2em;
     }
 
-    .textbox{
-        margin: auto 0 auto 0;
+    text{
+        padding: 1em 0 0 0;
     }
 
     /* NAVIGATION BAR */

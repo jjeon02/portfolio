@@ -6,52 +6,51 @@
         <meta charset="utf-8"> <!-- able multiple language -->
         <meta name="description" content="">
         <meta name ="viewport" content="width=device-width">
-        <link rel="icon" href="icon.png">
+        <link rel="icon" href="circle.png">
         <link rel="stylesheet" type="text/css" href="index.css">
         <script src="index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
-
         <div class="nav" id="myNav">
             <a href="index.html">Home</a>
             <a class="current">Brand Identity</a>
             <a href="risd.html">RISD</a>
-            <a>Typography</a>
-            <a class="editorial">Editorial Design</a>
+            <a href="typo.html">Typography</a>
+            <a href="edit.html" class="editorial">Editorial Design</a>
             <span href="javascript:void(0);" class="menu" onclick="navDrop()"> 
-                menu
+                Menu
             </span>
         </div>
         
-        <div class="navmargin"></div>
+        <div class="navmargin" id="top"></div>
+
+        <a href="#top">
+            <img src="arrow.svg" class="arrow">
+        </a>
 
         <div class="section">
             <div class="innerbox">
                 <img src="brand/1_brand.png">
             </div>
             <div class="innerbox">
-                <div class="innerbox">
+                <div class="centertext">
                     <p>
                         Brand identity works are made during the school. <br>
                         브랜드 아이덴티티 작품들은 학기 도중 제작되었다. 
                     </p>
                     <br>
-                    <p>
-                        <a href="#sign">Sign Museum</a>
-                    </p>
-                    <p>
-                        <a href="#lotus">Lotus Table</a>
-                    </p>
-                    <p>
-                        <a href="#seoul">Seoul Museum of Art</a>
-                    </p>
+                    <ul>
+                        <li><a href="#one">Sign Museum</a></li>
+                        <li><a href="#two">Lotus Table</a></li>
+                        <li><a href="#three">Seoul Museum of Art</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
       
         <!-- WORK -->
-        <div class="text" id="sign">
+        <div class="text" id="one">
             <div class="innerbox">
                 <h6>Sign Museum</h6>
             </div>
@@ -72,8 +71,8 @@
 
 
         <!-- WORK -->
-        <div class="text">
-            <div class="innerbox" id="lotus">
+        <div class="text" id="two">
+            <div class="innerbox" >
                 <h6>Lotus Table</h6>
             </div>
             <div class="innerbox">
@@ -93,8 +92,8 @@
 
 
         <!-- WORK -->
-        <div class="text">
-            <div class="innerbox" id="seoul">
+        <div class="text" id="three">
+            <div class="innerbox" >
                 <h6>Seoul Museum of Art</h6>
             </div>
             <div class="innerbox">
