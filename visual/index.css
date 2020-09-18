@@ -100,7 +100,12 @@ h2{
 }
 
 h6{
-    font-weight: 600;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+    text-decoration: none;
+    color:black;
+    margin:0;
 }
 
 a{
@@ -111,7 +116,7 @@ p,ul{
     font-weight: 400;
 }
 
-h6, p, ul{
+p, ul{
     font-family: 'Gothic A1', sans-serif;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -143,7 +148,7 @@ h6, p, ul{
     width:100%;
     margin:0px;
     box-sizing:border-box;
-    left:0;right:0;
+    left:0;right:0;bottom:0;
     position:relative;
     animation: appearance 0.6s linear;
 }
@@ -172,19 +177,25 @@ h6, p, ul{
 
 
 @media screen and (min-width:801px){
+
+    .body{
+        width: 100%;
+        max-width: 1300px;
+        margin:0 auto 0 auto;
+    }
+
     /* NAVIGATION BAR */
+
     .menu{
         display:none;
     }
 
     .centertext{
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        margin: 30% 0 30% 0;
     }
 
 }
+
 @media screen and (max-width:800px){
 
     .centertext{
