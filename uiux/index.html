@@ -6,28 +6,68 @@
         <meta charset="utf-8"> <!-- able multiple language -->
         <meta name="description" content="">
         <meta name ="viewport" content="width=device-width">
+        <link rel="icon" href="circle.png">
         <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="icon" href="icon.png">
+        <script src="index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="nav">
-            <span class="chosen">About</span>
+        <div class="nav" id="myNav">
+            <a class="current">Home</a>
             <a href="uiux.html">UI/UX</a>
-            <a>Brand Identity</a>
-            <a>Typography</a>
-            <a>Editorial</a>
+            <a href="brand.html">Brand Identity</a>
+            <a href="risd.html">RISD</a>
+            <a href="typo.html" >Typography</a>
+            <a href ="edit.html" class="editorial">Editorial Design</a>
+            <span href="javascript:void(0);" class="menu" onclick="navDrop()"> 
+                Menu
+            </span>
         </div>
         
-       <h1>Hello World!</h1>
-       <p>My name is Jueun Jeon. I am a designer looking for opportunities.</p>
+        <div class="navmargin" id="top"></div>
 
-       <h6>Contact me via...</h6>
-       <p>
-        <a>Email</a>
-        <a>Resume</a>
-        <a>Linkedin</a>
-       </p>
+        <div class="body">
+            <a href="#top">
+                <img src="arrow.svg" class="arrow">
+            </a>
+    
+            <div class="titleimg">
+                <h1>Hello World! </h1>
+            </div>
+    
+            <div class="text" id="one">
+                <div class="innerbox">
+                    <p>
+                        My name is Jueun Jeon and I am a graphic designer from Seoul, Korea. I explore the combinations and balance of different elements.<br>
+                        제 이름은 전주은이며, 서울에서 온 그래픽디자이너 입니다. 서로 다른 것들의 조합과 조화를 탐구합니다.
+                    </p>
+    
+                </div>
+                <div class="innerbox">
+    
+                    <h6>Please contact me via:</h6>
+                    <br>
+                    <ul>
+                        <li> <a href="mailto:june.jeon@gmail.com" target="_blank">Email</a> </li>
+                        <li> <a href="https://www.linkedin.com/in/jueun-jeon-0436/" target="_blank">Linkedin</a> </li>
+                    </ul>
+    
+                    <br>
+                    <h6>Links:</h6>
+                    <br>
+                    <ul>
+                        <li> <a>Resume</a></li>
+                        <li> <a href="https://jjeon02.github.io" target="_blank">Github Work</a></li>
+                        <li> <a href="https://github.com/jjeon02?tab=repositories" target="_blank">Github Repository</a></li>
+                        <li> <a href="https://www.youtube.com/channel/UCnno8xepsPg9BO2COG3WyKw" target="blank">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <img src="self.png" class="slide self">
+        </div>
+
+        
 
     </body>
 </html>
