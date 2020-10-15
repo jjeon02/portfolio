@@ -1,11 +1,12 @@
-html{
+html,body{
     scroll-behavior: smooth;
+    margin-left:0;padding: 0;
 }
 
 body{
     background: #ffffff;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1436px;
     margin:0 auto 0 auto;
     position:relative;
     left:0;right:0;
@@ -47,7 +48,7 @@ img{
     z-index: 4;
     position:fixed;
     top:0;left:0;right:0;
-    border-bottom: 1px solid black;
+    border-bottom: 1.2px solid black;
     box-sizing:border-box;
     height: 2.9em;
 }
@@ -68,13 +69,14 @@ img{
 
 .nav a:hover{
     color: black;
+    text-decoration: none;
     background-color:#dddddd;
     transition: background-color 0.3s ease;
 }
 
 .nav a:active{
     color: black;
-    background-color:#cccccc;
+    background-color:#dddddd;
     transition: background-color 0.3s ease;
 }
 
@@ -83,7 +85,7 @@ img{
 }
 
 .navmargin{
-    height: 3em;
+    height: 2.8em;
 }
 
 /* TOP ICON */
@@ -113,16 +115,6 @@ h1{
 
 }
 
-.circletext{
-    position: absolute;
-    top: 50%;
-left: 50%;
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-}
-
-
 h2{
     font-family: 'Helvetica', sans-serif;
     font-weight: 800;
@@ -132,13 +124,17 @@ h2{
     margin:0;
 }
 
-h6{
+h5{
     font-family: 'Helvetica', sans-serif;
     font-weight: 800;
     font-size: 1.8em;
     text-decoration: none;
     color:black;
     margin:0;
+}
+
+h6{
+    font-weight: 600;
 }
 
 a{
@@ -149,7 +145,7 @@ p,ul{
     font-weight: 400;
 }
 
-p, ul{
+p, ul, h6{
     font-family: 'Gothic A1', sans-serif;
     font-size: 1.2em;
     line-height: 1.8em;
@@ -166,7 +162,7 @@ p, ul{
 }
 
 .text{
-    border-top: 1px dashed black;
+    border-top: 1px solid #cccccc;
     margin: 0 0 6em 0;
     padding: 2em 0 0 0;
 }
@@ -179,17 +175,17 @@ p, ul{
 
 .slide{
     width:100%;
-    margin:0px;
+    margin:0;padding:0;
     box-sizing:border-box;
+    display:inline-block;
     left:0;right:0;bottom:0;
     animation: appearance 0.6s linear;
-    display:inline-block;
 }
+
 
 .self{
     border-top: 1px dashed black;
 }
-
 
 
 /* SCROLLBAR */
@@ -199,11 +195,11 @@ p, ul{
 }
 
 ::-webkit-scrollbar-track {
-    background:#ddd;
+    background:black;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #444;
     border-radius: 12px;
 }
 
