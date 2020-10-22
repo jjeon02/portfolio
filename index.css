@@ -150,7 +150,7 @@ p, ul, h6{
     font-size: 1.2em;
     line-height: 1.8em;
     text-decoration: none;
-    color:black;
+    /* color:black; */
     margin:0;
 }
 
@@ -168,10 +168,11 @@ p, ul, h6{
 }
 
 .innerbox{
-    width:100%;
-    padding: 2em;
+    width:100%; 
     box-sizing:border-box;
+    padding: 2em;
 }
+
 
 .slide{
     width:100%;
@@ -183,8 +184,8 @@ p, ul, h6{
 }
 
 
-.self{
-    border-top: 1px dashed black;
+.line{
+    border-top: 1px solid #cccccc;
 }
 
 
@@ -258,7 +259,7 @@ p, ul, h6{
     }
 
     /* div */
-    .text, .section{
+    .section, .text{
         display:inline-block;
         width:100%;
     }
