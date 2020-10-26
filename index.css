@@ -54,9 +54,10 @@ img{
 }
 
 .nav a{
-    float: left;
+    /* float: left; */
     color:black;
     display:block;
+    float:right;
 }
 
 .nav a, .menu{
