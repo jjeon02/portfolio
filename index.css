@@ -1,7 +1,12 @@
-html,body{
+/* default css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
-    margin-left:0;padding: 0;
+    outline:none;
 }
+
 
 body{
     background: #ffffff;
@@ -58,9 +63,9 @@ img{
     position:fixed;
     top:0;left:0;right:0;
     border-bottom: 1.2px solid black;
-    box-sizing:border-box;
     height: 2.9em;
 }
+
 
 .nav a{
     color:#999999;
@@ -79,7 +84,6 @@ img{
 .nav a:hover{
     color: black;
     text-decoration: none;
-    /* background-color:#dddddd; */
     transition: color 0.3s ease;
 }
 
@@ -95,6 +99,8 @@ img{
 .navmargin{
     height: 2.8em;
 }
+
+
 
 /* TOP ICON */
 
@@ -174,17 +180,21 @@ p, ul, h6{
 
 .innerbox{
     width:100%; 
-    box-sizing:border-box;
     padding: 2em;
 }
 
 .slide{
     width:100%;
     margin:0;padding:0;
-    box-sizing:border-box;
-    display:inline-block;
-    left:0;right:0;bottom:0;
+    display:block;
+    left:0;right:0;bottom:0;top:0;
     animation: appearance 0.6s linear;
+}
+
+.slide-wrap{width:100%;}
+
+.image{
+    width:100%;
 }
 
 .line{
