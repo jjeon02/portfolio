@@ -145,24 +145,17 @@ h5{
     margin:0;
 }
 
-h6{
-    font-weight: 600;
-}
+h6{font-weight: 600;}
 
-a{
-    color: black;
-}
+a{color: black;}
 
-p,ul{
-    font-weight: 400;
-}
+p,ul{font-weight: 400;}
 
 p, ul, h6{
     font-family: 'Gothic A1', sans-serif;
     font-size: 1.2em;
     line-height: 1.8em;
     text-decoration: none;
-    /* color:black; */
     margin:0;
 }
 
