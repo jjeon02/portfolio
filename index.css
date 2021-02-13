@@ -91,13 +91,8 @@ img{
     margin: 1em;
 }
 
-.navbar h6 a:visited{
-    color:black;
-}
-
 .navbar h6 a{font-weight:600;}
 .navbar ul li a{font-weight: 400;}
-
 
 
 /* nav-toggler css start */
