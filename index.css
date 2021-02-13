@@ -91,19 +91,26 @@ img{
     text-decoration: none;
 }
 
+.navbar h6 a:visited{
+    color:black;
+}
+
 .navbar h6 a{
-    margin: 1em 1em 1em 0;
+    margin: 1em;
 }
 .navbar ul li a{
-    margin: 1em 0 1em 1em;
+    margin: 1em;
 }
 
 .navbar h6 a{font-weight:600;}
 .navbar ul li a{font-weight: 400;}
 
-.navbar h6 a:hover, .navbar ul li a:hover{
+a:hover{
     color:blue;
     transition: color 0.2s linear;
+}
+a:active{
+    color:black;
 }
 
 /* nav-toggler css start */
@@ -164,20 +171,19 @@ img{
     /* nav-toggler */
     .navbutton{display: block;}
 
-
 }
 
 /* TOP ICON */
 
 .arrow{
-    width: 3.6em;
+    width: 4em;
     background: #ffffff;
-    padding: .8em;
+    padding: 1em;
     border-radius: 50%;
     border: 1px solid black;
     position:fixed;
-    bottom: 1em;
-    right:1em;
+    bottom: 2em;
+    right:2em;
     z-index: 4;
 }
 
@@ -209,8 +215,7 @@ h5{
 h6{font-weight: 800;}
 
 
-
-p,ul,ul li a{font-weight:400;color:#444444;}
+p,ul,ul li a{font-weight:400;color:black;}
 
 p, ul, h6{
     font-family: 'Gothic A1', sans-serif;
@@ -224,7 +229,6 @@ a:hover{
     color:blue;
     transition: color 0.2s linear;
 }
-a:visited{color:black;}
 
 /* DIVS */
 .body{
