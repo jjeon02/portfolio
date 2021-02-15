@@ -207,8 +207,7 @@ a:hover{ color:blue;transition: color 0.2s linear;}
 a:active{color:black;}
 
 /* DIVS */
-.body{
-    max-width:1440px;margin:auto;}
+.body{max-width:1440px;margin:auto;}
 
 .section, .text{
     display:flex;
@@ -245,6 +244,13 @@ a:active{color:black;}
     border-top: 1px solid #cccccc;
 }
 
+footer{
+    background-color: black;
+}
+
+footer h5, footer p, footer p a{
+    color:white;
+}
 
 /* SCROLLBAR */
 
