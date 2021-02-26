@@ -1,0 +1,44 @@
+/* TYPOGRAPHY */
+
+.center{
+    text-align:center;
+}
+
+h1, h2, h5, h6,p, ul{
+    font-family: 'Gothic A1', sans-serif;
+    text-decoration: none;
+    margin:0;
+}
+h1,h2{
+    line-height: 1.4em;
+}
+h1{
+    font-size: 2em;
+    font-weight:800; 
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.6em;
+    font-weight:600;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+h6{font-weight: 800;}
+
+p,ul{font-weight:400;}
+
+p, ul, h6{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+a{color:black;cursor: pointer;}
+a:hover{ color:blue;transition: color 0.2s linear;}
+a:active{color:black;}

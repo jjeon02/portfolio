@@ -8,6 +8,9 @@
         <meta name ="viewport" content="width=device-width">
         <link rel="icon" href="circle.png">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="stylesheet" type="text/css" href="type.css">
+        <link rel="stylesheet" type="text/css" href="title.css">
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -32,34 +35,35 @@
         </header>
         
         <div class="navmargin" id="top"></div>
+        <div class="navmargin"></div>
+
+        <!-- ARROW -->
+        <a href="#top">
+            <img src="arrow.svg" class="arrow">
+        </a>
 
         <div class="body">
-            <a href="#top">
-                <img src="arrow.svg" class="arrow">
-            </a>
-    
-            <div class="section">
+            <!-- BODY START -->
+            <div class="section lightbg">
                 <div class="innerbox">
-                    <img src="edit/edit.png"> 
+                    <h1>Editorial Design</h1>
+                    <h5>편집디자인</h5>
                 </div>
                 <div class="innerbox">
-                    <div class="centertext">
-                        <p>
-                            Editorial works including books and an infographic.<br>
-                            인포그래픽과 책을 포함한 편집디자인 작품들.
-                        </p>
-                        <br>
-                        <ul>
-                            <li><a href="#one">Everyone Saw a Cat: Book</a></li>
-                            <li><a href="#two">Lufthansa Poster</a></li>
-                            <li><a href="#three">Timeline of M.G.Agha and Yi Jeseok</a></li>
-                        </ul>
-                    </div>
+                    <p>
+                        Editorial works including books and an infographic.<br>
+                        인포그래픽과 책을 포함한 편집디자인 작품들.
+                    </p><br>
+                    <p>
+                        <a href="#one">Everyone Saw a Cat: Book</a><br>
+                        <a href="#two">Lufthansa Poster</a></li><br>
+                        <a href="#three">Timeline of M.G.Agha and Yi Jeseok</a></br>
+                    </p>
                 </div>
             </div>
           
             <!-- WORK -->
-            <div class="text" id="one">
+            <div class="section" id="one">
                 <div class="innerbox" >
                     <h5>Everyone Saw a Cat: Book</h5>
                     <h5>모두 고양이를 봤다: 책</h5>
@@ -84,7 +88,7 @@
 
 
             <!-- WORK -->
-            <div class="text" id="two">
+            <div class="section" id="two">
                 <div class="innerbox" >
                     <h5>Lufthansa Poster</h5>
                 </div>
@@ -101,7 +105,7 @@
             <img src="typo/3_typo_2_2.png" class="slide">
 
             <!-- WORK -->
-            <div class="text" id="three">
+            <div class="section" id="three">
                 <div class="innerbox">
                     <h5>Timeline of M.G.Agha and Yi Jeseok</h5>
                 </div>
@@ -121,7 +125,7 @@
         </div>
 
         <footer>
-            <body>
+            <div class="body">
                 <div class="innerbox center">
                     <h5>Jueun Jeon</h5>
                     <p>Seoul, Korea</p>
@@ -129,7 +133,7 @@
                     <p><a href="mailto:june.jeon@gmail.com" target="_blank">june.jeon@gmail.com</a></p>
                     <br><br>
                 </div>
-            </body>
+            </div>
         </footer>
         
         <!-- JS -->

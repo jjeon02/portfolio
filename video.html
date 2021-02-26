@@ -8,6 +8,9 @@
         <meta name ="viewport" content="width=device-width">
         <link rel="icon" href="circle.png">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="stylesheet" type="text/css" href="type.css">
+        <link rel="stylesheet" type="text/css" href="title.css">
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -32,27 +35,35 @@
         </header>
         
         <div class="navmargin" id="top"></div>
+        <div class="navmargin"></div>
+
+        <!-- ARROW -->
+        <a href="#top">
+            <img src="arrow.svg" class="arrow">
+        </a>
+
 
         <div class="body">
-            <a href="#top">
-                <img src="arrow.svg" class="arrow">
-            </a>
+            <!-- BODY START -->
+            <div class="section lightbg">
+                <div class="innerbox">
+                    <h5>Video Works</h5>
+                    <h5>동영상</h5>
+                </div>
+                <div class="innerbox">
+                    <p>Video Works that are either the project itself or part of a project.</p><br>
 
-            <div class="innerbox center">
-                <h5>Video Works</h5>
-                <p>Video Works that are either the project itself or part of a project.</p>
-                <br>
-                <p>
-                    <a href="#one">Yuzu Tea</a> <br>
-                    <a href="#two">Cat</a> <br>
-                    <a href="#three">No Poster Show</a>
-                </p>
+                    <p>
+                        <a href="#one">Yuzu Tea</a><br>
+                        <a href="#two">Cat</a> <br>
+                        <a href="#three">No Poster Show</a>
+                    </p>
+                </div>
             </div>
-
           
             <!-- WORK -->
 
-            <div class="text" id="one">
+            <div class="section" id="one">
                 <div class="innerbox">
                     <h5>Yuzu Tea</h5><br>
                     <p>Stop-motion animation for the process of making yuzu tea.</p>
@@ -72,7 +83,7 @@
             
 
             <!-- WORK -->
-            <div class="text" id="two">
+            <div class="section" id="two">
                 <div class="innerbox">
                     <h5>Cat</h5><br>
                     <p>A lyric video of SunWooJung-A's song:CAT</p>
@@ -91,7 +102,7 @@
             </div>
 
             <!-- WORK -->
-            <div class="text" id="three">
+            <div class="section" id="three">
                 <div class="innerbox">
                     <h5>No Poster Show</h5>
                     <br>
@@ -112,7 +123,7 @@
         </div>
 
         <footer>
-            <body>
+            <div class="body">
                 <div class="innerbox center">
                     <h5>Jueun Jeon</h5>
                     <p>Seoul, Korea</p>
@@ -120,7 +131,7 @@
                     <p><a href="mailto:june.jeon@gmail.com" target="_blank">june.jeon@gmail.com</a></p>
                     <br><br>
                 </div>
-            </body>
+            </div>
         </footer>
 
         <!-- JS -->

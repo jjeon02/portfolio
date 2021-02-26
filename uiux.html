@@ -8,6 +8,9 @@
         <meta name ="viewport" content="width=device-width">
         <link rel="icon" href="circle.png">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="stylesheet" type="text/css" href="type.css">
+        <link rel="stylesheet" type="text/css" href="title.css">
         <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -31,38 +34,37 @@
             </div>
         </header>
 
-        <div class="navmargin" id="top"></div>
-
         <a href="#top">
             <img src="arrow.svg" class="arrow">
         </a>
 
-        <div class="body">
+        <div class="navmargin" id="top"></div>
+        <div class="navmargin"></div>
 
-            <div class="section">
+        <div class="body">
+            <!-- BODY START -->
+            <div class="section lightbg">
                 <div class="innerbox">
-                    <img src="uiux/uiux.png">
+                    <h1>UI/UX</h1>
+                    <h5>User Interface / User Experience </h5>
                 </div>
                 <div class="innerbox">
-                    <div class="centertext">
-                        <p>
-                            Website works including Degree Project. <br>
-                            졸업작품을 포함한 웹사이트 작품들. 
-                        </p>
-                        <br>
-                        <ul>
-                            <li><a href="#zero">McDonald Delivery App Redesign</a><br></li>
-                            <li><a href="#one">Degree Project: Korean, Typography and Ornament Timeline</a><br></li>
-                            <li><a href="#two">Retro Future Archive</a></li>
-                            <li><a href="#three">Leyendecker Archive</a></li>
-                        </ul>
-                    </div>
+                    <p>
+                        UI/UX works including Degree Project. <br>
+                        졸업작품을 포함한 웹사이트 작품들. 
+                    </p><br>
+                    <p>
+                        <a href="#zero">McDonald Delivery App Redesign</a><br>
+                        <a href="#one">Degree Project: Korean, Typography and Ornament Timeline</a><br>
+                        <a href="#two">Retro Future Archive</a><br>
+                        <a href="#three">Leyendecker Archive</a>
+                    </p>
                 </div>
             </div>
-
-            <!-- WORK IN PROGRESS-->
-            <div class="text" id="zero">
-                <div class="innerbox" >
+            
+            <!-- WORK -->
+            <div class="section" id="zero">
+                <div class="innerbox">
                     <h5>McDonald Delivery App Redesign</h5>
                 </div>
                 <div class="innerbox">
@@ -92,7 +94,7 @@
             </div>
 
             <!-- WORK -->
-            <div class="text" id="one">
+            <div class="section" id="one">
                 <div class="innerbox" >
                     <h5>Degree Project: <br>Korean, Typography and Ornament Timeline</h5>
                     <br>
@@ -118,19 +120,17 @@
                 <img src="uiux/dp8.png" class="slide">
             </div>
 
-            <div class="innerbox line center">
-                <h5>
-                    <a href="https://jjeon02.github.io/jueundp/" target="_blank"> Active Link </a>
-                </h5>
+
+            <div class="center box border">
+                <h5><a href="https://jjeon02.github.io/jueundp/" target="blank">Active Link</a></h5>
             </div>
 
-            <div class="text" id="two">
-
+            <!-- WORK -->
+            <div class="section border" id="two">
                 <div class="innerbox" >
                     <h5>Retro Future Archive</h5><br>
                     <h6> <a href="https://jjeon02.github.io/jueunwebtype2020/project_2-3/index.html" target="_blank">Active Link</a></h6>
                 </div>
-
                 <div class="innerbox">
                     <ul>
                         <li>Website,Typography,Font Design</li>
@@ -146,14 +146,14 @@
             <img src="uiux/retro4.png" class="slide">
             <img src="uiux/retro5.png" class="slide">
 
-            <div class="innerbox line center">
+            <div class="box center border">
                 <h5>
                     <a href="https://jjeon02.github.io/jueunwebtype2020/project_2-3/index.html">Active Link</a>
                 </h5>
             </div>
 
-           
-            <div class="text" id="three">
+            <!-- WORK -->
+            <div class="section border" id="three">
                 <div class="innerbox" >
                     <h5>Leyendecker Archive</h5>
                     <p><a href="https://jjeon02.github.io/Project%202/index.html" target="_blank">Active Link</a></p>
@@ -171,17 +171,19 @@
             <img src="uiux/deck2.png" class="slide">
             <img src="uiux/deck3.png" class="slide">
             <img src="uiux/deck4.png" class="slide">
-     
-            <div class="innerbox line center">
+            <img src="uiux/deck5.png" class="slide">
+        
+            <div class="center box border">
                 <h5>
                     <a href="https://jjeon02.github.io/Project%202/index.html" target="_blank">Active Link</a>
                 </h5>
             </div>
 
+            <!-- BODY END -->
         </div>
 
         <footer>
-            <body>
+            <div class="body">
                 <div class="innerbox center">
                     <h5>Jueun Jeon</h5>
                     <p>Seoul, Korea</p>
@@ -189,7 +191,7 @@
                     <p><a href="mailto:june.jeon@gmail.com" target="_blank">june.jeon@gmail.com</a></p>
                     <br><br>
                 </div>
-            </body>
+            </div>
         </footer>
 
         <!-- JS -->
