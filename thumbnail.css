@@ -29,5 +29,6 @@
 
 .thumbnail-box:hover{
     opacity:.9;
+    cursor: pointer;
 }
 

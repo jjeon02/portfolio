@@ -7,6 +7,13 @@
     outline:none;
 }
 
+::-moz-selection{
+    background:rgba(0,0,0,0.1);
+}
+::selection{
+    background:rgba(0,0,0,0.1);
+}
+
 body{
     background: #ffffff;
     margin:0 auto 0 auto;
