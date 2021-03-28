@@ -144,11 +144,11 @@ a:active{color:black;}
 }
 
 footer{
-    background-color: black;
-}
-
-footer h5, footer p, footer p a{
-    color:white;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    background-image:url("2.gif");
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 /* SCROLLBAR */
