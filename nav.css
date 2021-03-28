@@ -64,6 +64,10 @@
     margin: 6px 0;
 }
 
+.navmargin{
+    height:2.4em;
+}
+
 /* NAV RELATIVE*/
 @media screen and (max-width: 890px) {
 
