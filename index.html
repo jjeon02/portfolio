@@ -9,28 +9,44 @@
         <link rel="icon" href="circle.png">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="nav.css">
-        <link rel="stylesheet" type="text/css" href="type.css">
         <link rel="stylesheet" type="text/css" href="title.css">
-        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="thumbnail.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <header class="nav">
+
+        <div id="sideNav" class="sidenav">
+            <p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-decoration: none;">
+                CLOSE
+                </a>
+            </p>
+            <div style="color:var(--aaaGrey);">
+                <h2><a href="about.html" style="color:var(--aaaGrey);">About</a></h2>
+                <div class="thumb-border"  style="border-color:var(--aaaGrey);"></div>
+                <h2><a href="https://www.linkedin.com/in/jueun-jeon-0436/" target="_blank" style="color:var(--aaaGrey);">LinkedIn</a></h2>
+                <h2><a href="https://www.behance.net/jueunjeon" target="_blank" style="color:var(--aaaGrey);">Behance</a></h2>
+                <h2><a href="mailto:june.jeon@gmail.com" target="_blank" style="color:var(--aaaGrey);">Email</a></h2>
+                <h2><a href="about.html#resume" style="color:var(--aaaGrey);">Resume</a></h2>
+                <p class="gradient"> <span class="english">Jueun Jeon</span> = <span class="korean">전주은</span> </p>
+            </div>
+        </div>
+
+        <header class="nav-wrapper">
             <div class="nav-container">
-                <nav class="navbar">
-                    <h6><a href="index.html" class="logo">Jueun Jeon's Portfolio</a></h6>
-                    <ul>
-                        <li><a href="uiux.html">UI/UX</a></li>
-                        <li><a href="brand.html">BRAND IDENTITY</a></li>
-                        <li><a href="typo.html">TYPOGRAPHY</a></li>
-                        <li><a href="edit.html">EDITORIAL</a></li>
-                        <li><a href="video.html">VIDEO</a></li>
-                    </ul>
-                    <button class="navbutton">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </nav>
+                <p class="gradient"> <span class="english">Jueun Jeon</span> = <span class="korean">전주은</span> </p>
+                <ul>
+                    <li><a href="#uiux">UI/UX</a></li>
+                    <li><a href="#bi">IDENTITY</a></li>
+                    <li><a href="#type">TYPOGRAPHY</a></li>
+                    <li> <a href="#edit">EDITORIAL</a></li>
+                    <li> <a href="#video">VIDEO</a></li>
+                    <li> <a href="#illust">ILLUSTRATION</a></li>
+                    <li><a href="about.html" style="text-decoration: underline;">About</a></li>
+                </ul>
+                <button class="nav-button" onclick="openNav()"><p>MENU</p></button>
             </div>
         </header>
 
@@ -38,109 +54,375 @@
             <img src="arrow.svg" class="arrow">
         </a>
 
-        <div class="title-box darkbg"></div>
-        <div class="gif-margin" id="top"></div>
+        <div style="height:47px;width:100%;margin:0;"></div>
 
-        <div class="white-container">
-            <div class="body">
+        <header class="section bg">
+            <h2>
+                Hello World! My name is Jueun Jeon.
+                I am a UI/UX & Web designer from Seoul, Korea.
+                I went to <span class="gradient">Korea University</span> 🇰🇷 for Industrial Design and <span class="gradient">Rhode Island School of Design</span> 🇺🇸 for Graphic Design BFA.
+                I have worked for <span class="gradient">RISD Global</span>, <span class="gradient">pxd</span> , and <span class="gradient">Art & Design international</span>.
+            </h2> 
+        </header>
 
-                <div class="section">
-                    <div class="innerbox">
-                        <img src="profile_bw.jpg" id="portrait">
-                    </div>
-                
-                    <div class="innerbox center">
-                        <br><br>
-                        <p>Hello World!<br>
-                            My name is Jueun Jeon (전주은)<br> 
-                            I am a graphic designer from Seoul, Korea.<br>
-                            I graduated Graphic Design BFA from <br>Rhode Island School of Design on 2020. </p>
-                        <br><br>
-                        <h5>Please contact me via...</h5>
-                        <p>
-                            <a href="mailto:june.jeon@gmail.com" target="_blank">Email</a> / 
-                            <a href="https://www.linkedin.com/in/jueun-jeon-0436/" target="_blank">Linkedin</a>
-                        </p>
-                        <br><br>
-                        <h5>Links to...</h5>
-                        <p>
-                            <a href="https://drive.google.com/file/d/1FuOrXKZ_UcK1FvTvm5HVzEsECyRc9Cbs/view?usp=sharing" target="blank">Resume</a> / 
-                            <a href="https://www.behance.net/jueunjeon" target="blank">Behance</a><br>
-                            <a href="https://jjeon02.github.io" target="_blank">Github Work</a> / 
-                            <a href="https://github.com/jjeon02?tab=repositories" target="_blank">Github Repository</a><br>
-                            <a href="https://www.youtube.com/channel/UCnno8xepsPg9BO2COG3WyKw" target="blank">Youtube</a>
-                        </p>
-                    </div>
+        <div class="section border center">
+            <h2>Work Experience</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img-work work-adi"></div>
+                <div class="thumb-text-box">
+                    <div class="thumb-title-box">
+                        <h6><a href="http://swagger.kr/" target="_blank">ADI</a></h6>
+                        <p>Design Intern</p>
+                    </div> 
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, Web Design, Web Publishing</p>
+                    <p> <a href="work_adi.html">See Work  -></a>
                 </div>
-    
-                <div class="innerbox border center"><br><h5>Education</h5></div>
-                <div class="section center">
-                    <div class="innerbox center">
-                        <h6>Rhode Island School of Design</h6>
-                        <p>Graphic Design, Bachelor of Fine Arts</p>
-                        <p>Graduated</p>
-                        <p>2017.6 ~ 2020.5</p>
-                    </div>
-                    <div class="innerbox">
-                        <h6>Korea University</h6>
-                        <p>Department of Art and Design (디자인조형학부)</p>
-                        <p>Drop out - For transfer purpose</p>
-                        <p>2015.3 ~ 2017.3</p>
-                        <br><br>
-                    </div>
-                </div>
-
-                <div class="innerbox border center"><br><h5>Work Experience</h5></div>
-                <div class="section center">
-                    <div class="innerbox">
-                        <h6><a href="http://swagger.kr/" target="_blank">Art and Design International</a></h6>
-                        <p>Position: Design Intern</p>
-                        <p>Web Design & Publishing / Video</p>
-                        <p>2021.2 ~ Currently Working</p>
-                    </div>
-                    <div class="innerbox">
+            </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img-work work-pxd"></div>
+                <div class="thumb-text-box">
+                    <div class="thumb-title-box">
                         <h6><a href="https://www.pxd.co.kr/" target="_blank">pxd</a></h6>
-                        <p>Position: GUI Intern</p>
-                        <p>UX / UI / GUI</p>
-                        <p>2019.6 ~ 2019.8</p>
-                    </div>
-                    <div class="innerbox">
+                        <p>GUI Design Intern</p>
+                    </div> 
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, App Design</p>
+                    <p> <a href="work_pxd.html">See Work  -></a>
+                </div>
+            </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img-work work-risd"></div>
+                <div class="thumb-text-box">
+                    <div class="thumb-title-box">
                         <h6><a href="https://global.risd.edu/" target="_blank">RISD Global</a></h6>
-                        <p>Position: Design Assistant</p>
-                        <p>Editorial Design</p>
-                        <p>2018.9 ~ 2019.5</p>
-                        <br><br>
-                    </div>
+                        <p>Design Assistant</p>
+                    </div> 
+                    <div class="thumb-border"></div>
+                    <p>Editorial Design, Social Media Contents</p>
+                    <p><a href="type_risd.html">See Work  -> </a>
                 </div>
-
-                <div class="section center border">
-                    <div class="innerbox">
-                        <h5>Skills</h5><br>
-                        <img src="self_skills.png" style="width:80%;">
-                    </div>
-                    <div class="innerbox">
-                        <h5>Specialties</h5><br>
-                        <img src="self_special.png" style="width:80%;">
-                    </div>
-                </div>
-    
             </div>
         </div>
-        
-        <footer>
-            <div class="body">
-                <div class="innerbox center">
-                    <h5>Jueun Jeon</h5>
-                    <p>Seoul, Korea</p>
-                    <p>Graphic Designer</p>
-                    <p><a href="mailto:june.jeon@gmail.com" target="_blank">june.jeon@gmail.com</a></p>
-                    <br><br>
+
+        <div class="section border center">
+            <h2>Education</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img-work school-korea thumb-left" ></div>
+                <div class="thumb-text-box thumb-right">
+                    <h6><a target="_blank">Korea University</a></h6>
+                    <div class="thumb-border"></div>
+                    <p>Art & Design Department</p>
+                    <p>2015.3 ~ 2017.3</a>
                 </div>
             </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img-work school-risd thumb-left"></div>
+                <div class="thumb-text-box thumb-right">
+                    <h6><a target="_blank">Rhode Island School of Design</a></h6>
+                    <div class="thumb-border"></div>
+                    <p>Graphic Design, BFA</p>
+                    <p>2017.6 ~ 2020.5</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UIUX -->
+        <div id="uiux" style="height:0em;"></div>
+
+        <div class="section border center">
+            <br><br><br>
+            <h2>UI/UX</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='ui_mac.html'" >
+                <div class="thumbnail-img ui-mc"></div>
+                <div class="thumb-text-box">
+                    <h6>McDelivery App Redesign</h6>
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, App Design, BI</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='ui_dp.html'">
+                <div class="thumbnail-img ui-dp"></div>
+                <div class="thumb-text-box">
+                    <h6>Degree Project: Korean, Typography and Ornament Timeline</h6>
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, Web design, Typography</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='id_sema.html'">
+                <div class="thumbnail-img ui-sema"></div>
+                <div class="thumb-text-box">
+                    <h6>Seoul Museum of Art</h6>
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, App, Brand Identity</p>
+                </div>
+            </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img ui-mong"></div>
+                <div class="thumb-text-box">
+                    <h6>J.mong Portfolio</h6>
+                    <div class="thumb-border"></div>
+                    <p><a target="_blank" href="https://jjeon02.github.io/jmong/">!!! Work in Progress !!</a> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='ui_retro.html'">
+                <div class="thumbnail-img ui-retro"></div>
+                <div class="thumb-text-box">
+                    <h6>Retro Future Archive</h6>
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, Web design, Font Design, Typography</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='ui_decker.html'">
+                <div class="thumbnail-img ui-decker"></div>
+                <div class="thumb-text-box">
+                    <h6>Leyendecker Archive</h6>
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, Web design,Typography</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BI -->
+        <div id="bi" style="height:4.8em;"></div>
+
+        <div class="section center">
+            <h2>Identity</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='id_sema.html'">
+                <div class="thumbnail-img ui-sema"></div>
+                <div class="thumb-text-box">
+                    <h6>Seoul Museum of Art</h6>
+                    <div class="thumb-border"></div>
+                    <p>UI/UX, App, Brand Identity</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='brand_sign.html'">
+                <div class="thumbnail-img bi-sign"></div>
+                <div class="thumb-text-box">
+                    <h6>Sign Museum</h6>
+                    <div class="thumb-border"></div>
+                    <p> Brand Identity</p>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='brand_lotus.html'">
+                <div class="thumbnail-img bi-lotus"></div>
+                <div class="thumb-text-box">
+                    <h6>Lotus Table</h6>
+                    <div class="thumb-border"></div>
+                    <p> Brand Identity</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='brand_risd.html'">
+                <div class="thumbnail-img bi-risd"></div>
+                <div class="thumb-text-box">
+                    <h6>To Get Out of RISD</h6>
+                    <div class="thumb-border"></div>
+                    <p>Brand Identity, Editorial Design, Typography</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TYPE -->
+        <div id="type" style="height:4.8em;"></div>
+
+        <div class="section center">
+            <h2>Typography</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='type_risd.html'">
+                <div class="thumbnail-img type-risd"></div>
+                <div class="thumb-text-box">
+                    <h6>RISD Global</h6>
+                    <div class="thumb-border"></div>
+                    <p>Editorial Design, Typography, Social Media</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='type_sejong.html'">
+                <div class="thumbnail-img type-sejong"></div>
+                <div class="thumb-text-box">
+                    <h6>Korean Alphabet Card - Designer Edition</h6>
+                    <div class="thumb-border"></div>
+                    <p>Editorial Design, Typography, Illustration</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDITORIAL -->
+        <div id="edit" style="height:4.8em;"></div>
+
+        <div class="section center">
+            <h2>Editorial</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='edit_cat.html'">
+                <div class="thumbnail-img edit-cat"></div>
+                <div class="thumb-text-box">
+                    <h6>Everyone Saw a Cat</h6>
+                    <div class="thumb-border"></div>
+                    <p>Illustration, Editorial, Book</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='edit_blackhole.html'">
+                <div class="thumbnail-img edit-blackhole"></div>
+                <div class="thumb-text-box">
+                    <h6>Blackhole</h6>
+                    <div class="thumb-border"></div>
+                    <p>Infographic</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='edit_blade.html'">
+                <div class="thumbnail-img edit-blade"></div>
+                <div class="thumb-text-box">
+                    <h6>Blade Runner Script Book</h6>
+                    <div class="thumb-border"></div>
+                    <p>Illustration, Editorial, Book</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='edit-blade.html'">
+                <div class="thumbnail-img edit-luft"></div>
+                <div class="thumb-text-box">
+                    <h6>Lufthansa Poster</h6>
+                    <div class="thumb-border"></div>
+                    <p>Editorial, Poster</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='edit_designer.html'">
+                <div class="thumbnail-img edit-designer"></div>
+                <div class="thumb-text-box">
+                    <h6>Timeline of M.F.Agha and Yi Jeseok</h6>
+                    <div class="thumb-border"></div>
+                    <p>Editorial, Book, Infogrphic</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="video" style="height:4.8em;"></div>
+
+        <div class="section center">
+            <h2>Video</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box-work">
+                <div class="thumb-text-box" >
+                    <h1>Yuzu Tea</h1><br>
+                    <div class="thumb-border"></div>
+                    <p>Stop-motion animation for the process of making yuzu tea.</p>
+                    <p>2017.11~ 2017.12</p>
+                    <p>Participation level: 참여도 100%</p>
+                </div>
+            </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img">
+                    <iframe src="https://www.youtube.com/embed/8cU9q0p8bpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box-work">
+                <div class="thumb-text-box" >
+                    <h1>Cat</h1><br>
+                    <div class="thumb-border"></div>
+                    <p>A lyric video of Sun Woo Jung-A's song: CAT</p>
+                    <p>2019.1~ 2019.2</p>
+                    <p>Participation level: 참여도 100%</p>
+                </div>
+            </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img">
+                    <iframe src="https://www.youtube.com/embed/PA-CNLa10y8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box-work">
+                <div class="thumb-text-box" >
+                    <h1>No Poster Show</h1><br>
+                    <div class="thumb-border"></div>
+                    <p>A new way of thinking the poster as a medium.</p>
+                    <p>2019.3~ 2019.5</p>
+                    <p>Participation level: 참여도 100%</p>
+                </div>
+            </div>
+            <div class="thumbnail-box-work">
+                <div class="thumbnail-img">
+                    <iframe src="https://www.youtube.com/embed/FAKJu1PLWus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="illust" style="height:4.8em;"></div>
+
+        <div class="section center">
+            <h2>Illustration</h2>
+        </div>
+
+        <div class="thumbnail-grid">
+            <div class="thumbnail-box" onclick ="location.href ='illust_2018.html'">
+                <div class="thumbnail-img"></div>
+                <div class="thumb-text-box">
+                    <h6>Illustration</h6>
+                    <div class="thumb-border"></div>
+                    <p>Illustration 2018</p>
+                </div>
+            </div>
+            <div class="thumbnail-box" onclick ="location.href ='illust.html'">
+                <div class="thumbnail-img"></div>
+                <div class="thumb-text-box">
+                    <h6>Illustration</h6>
+                    <div class="thumb-border"></div>
+                    <p>Illustration 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section center">
+            <h2>End of Work</h2>
+        </div>
+            
+        <footer class="section">
+            <h2 class="center">
+                <span class="gradient" >
+                    <span class="english">Jueun Jeon</span> = <span class="korean">전주은</span> 
+                </span>
+            </h2>
+            <h2>
+                <a href="https://www.linkedin.com/in/jueun-jeon-0436/" target="_blank">Linkedin</a> / 
+                <a href="https://www.behance.net/jueunjeon" target="_blank">Behance</a>  /
+                <a href="mailto:june.jeon@gmail.com" target="_blank">june.jeon@gmail.com</a>  /
+                <a href="about.html#resume">Resume</a>
+            </h2>
+            <br><br><br><br><br>
         </footer>
 
         <!-- JS -->
         <script src="index.js"></script>
-
     </body>
 </html>

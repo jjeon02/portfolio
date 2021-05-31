@@ -1,32 +1,24 @@
-// NAVBAR
-    // NAVBAR - DEFINING VARIABLE
-    const navToggler = document.querySelector('.navbutton');
-    const navMenu = document.querySelector('.navbar ul');
-    const navLinks = document.querySelectorAll('.navbar a');
-
-    //FUNCTION - ALL EVENT LISTENER
-    allEventListners();
-
-    function allEventListners() {
-    navToggler.addEventListener('click', togglerClick);
-    navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
-    }
-
-    // TOGGLE CLICK
-    function togglerClick() {
-    navToggler.classList.toggle('toggler-open');
-    navMenu.classList.toggle('open');
-    }
-
-    // NAVLINKCLICK
-    function navLinkClick() {
-        if(navMenu.classList.contains('open')){
-            navToggler.click();
-        }
-    }
-
 // GOBACK BUTTON
     function goBack() {
         window.history.back();
     }
 
+//SCROLL
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.documentElement.scrollTop> 700) {
+//     document.getElementById("navbar").style.opacity= "1";
+//   } else {
+//     document.getElementById("navbar").style.opacity= "0";
+//   }
+// }
+
+function openNav() {
+  document.getElementById("sideNav").style.width= "100%";
+}
+
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0";
+}
+   
