@@ -263,7 +263,7 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
 }
 
 @media screen and (max-width: 1440px) and (min-width:891px){
-    /* .nav-container{padding: 0 24px;} */
+    .nav-container{padding: 0 24px;}
 }
 
 /* NAV RELATIVE*/
