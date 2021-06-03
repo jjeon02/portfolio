@@ -94,6 +94,11 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
 }
 
 .center{text-align:center;}
+
+.activelink {background-color: var(--subtleBlack);text-align:center;}
+.activelink > h1 a{color:var(--lightGrey);}
+.activelink > h1:hover{animation: colChange 2s infinite;}
+
 /* TOP ICON */
 
 .arrow{
@@ -217,9 +222,9 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     .type-sejong{background:url("type/thumb_sejong.png")no-repeat center;}
     /*EDIT*/
     .edit-cat{background:url("edit/thumb_cat.jpg")no-repeat center;}
-    .edit-blackhole{background:url("edit/blackhole.png")no-repeat center;}
+    .edit-blackhole{background:url("edit/thumb_black.jpg")no-repeat center;}
     .edit-blade{background:url("edit/thumb_blade.jpg")no-repeat center;}
-    .edit-luft{background:url("edit/thumb_luft.png")no-repeat center;}
+    .edit-luft{background:url("edit/thumb_luft.jpg")no-repeat center;}
     .edit-designer{background:url("edit/thumb_design.jpg")no-repeat center;}
     /* ILLUST */
     .illust-bg-crane{background:url("illust/2018_4.jpg")no-repeat center;}
