@@ -21,12 +21,12 @@ body{
 /* SCROLLBAR */
 ::-webkit-scrollbar {width:12px;}
 ::-webkit-scrollbar-track {background: var(--lightGrey);border-left: 1px solid var( --subtleBlack);}
-::-webkit-scrollbar-thumb {background: var(--aaaGrey); border-radius: 0; border-top: 1px solid var( --subtleBlack);border-bottom: 1px solid var( --subtleBlack);border-left: 1px solid var( --subtleBlack);}
+::-webkit-scrollbar-thumb {background: var(--subtleBlack); border-radius: 0; border-top: 1px solid var( --subtleBlack);border-bottom: 1px solid var( --subtleBlack);border-left: 1px solid var( --subtleBlack);}
 @media screen and (max-width:800px){::-webkit-scrollbar {display: none;}}
 
 :root {
-    --lightGrey: #d6dcda;
-    --aaaGrey: #9eacaa;
+    --lightGrey: #c1c5c8;
+    /* --aaaGrey: #9eacaa; */
     --subtleBlack: #24272a;
     --opacCol: rgba(36,39,42,0.4);
 }
