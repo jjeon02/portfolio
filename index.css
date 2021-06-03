@@ -199,9 +199,9 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     .school-korea{background:url("korea.jpg")no-repeat center;}
     .school-risd{background:url("risd.jpg")no-repeat center;}
     /* WORK */
-    .work-pxd{background:url("work/pxd.png")no-repeat center;}
-    .work-risd{background:url("work/thumb_risd.png")no-repeat center;}
-    .work-adi{background:url("work/adi.png")no-repeat center;}
+    .work-pxd{background:url("work/pxd.jpg")no-repeat center;}
+    .work-risd{background:url("brand/thumb_risd.jpg")no-repeat center;}
+    .work-adi{background:url("work/adi.jpg")no-repeat center;}
     /* UI */
     .ui-mc{background:url("uiux/thumb_mc.jpg")no-repeat center;}
     .ui-dp{background:url("uiux/thumb_dp.jpg")no-repeat center;}
@@ -212,7 +212,7 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     /* Brand */
     .bi-sign{background:url("brand/thumb_sign.jpg")no-repeat center;}
     .bi-lotus{background:url("brand/thumb_lotus.jpg")no-repeat center;}
-    .bi-risd{background:url("brand/thumb_risd.png")no-repeat center;}
+    .bi-risd{background:url("brand/thumb_risd.jpg")no-repeat center;}
     /* TYPE */
     .type-sejong{background:url("type/thumb_sejong.png")no-repeat center;}
     /*EDIT*/
