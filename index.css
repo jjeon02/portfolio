@@ -192,10 +192,9 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
 }
 
 /* THUMBNAIL IMAGES */
-    /* Portrait */
-    .self{
-        background:url("profile_bw.jpg")no-repeat center;
-    }
+    /* About */
+    .self{background:url("profile_bw.jpg")no-repeat center;border:1px solid var(--subtleBlack);}
+    .document{background:url("work/resume.jpg")no-repeat center;}
     /* School */
     .school-korea{background:url("korea.jpg")no-repeat center;}
     .school-risd{background:url("risd.jpg")no-repeat center;}
@@ -226,7 +225,7 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     .illust-bg-crane{background:url("illust/2018_4.jpg")no-repeat center;}
     .illust-bg-bear{background:url("illust/2017_4.jpeg")no-repeat center;}
     /*Image - Common*/
-    .self,.school-korea, .school-risd, .work-adi, .work-pxd, .work-risd, .ui-mc, .ui-dp, .ui-mong,.ui-sema, .ui-retro,.ui-decker,.bi-sema,.bi-sign,.bi-lotus, .bi-risd, .type-sejong, .edit-cat, .edit-blackhole, .edit-blade , .edit-luft, .edit-designer,.illust-bg-crane,.illust-bg-bear{
+    .self,.school-korea, .school-risd, .work-adi, .work-pxd, .work-risd, .ui-mc, .ui-dp, .ui-mong,.ui-sema, .ui-retro,.ui-decker,.bi-sema,.bi-sign,.bi-lotus, .bi-risd, .type-sejong, .edit-cat, .edit-blackhole, .edit-blade , .edit-luft, .edit-designer,.illust-bg-crane,.illust-bg-bear,.document{
         -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
         background-size: cover;
     }
