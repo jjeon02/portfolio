@@ -222,8 +222,9 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     .edit-blade{background:url("edit/thumb_blade.jpg")no-repeat center;}
     .edit-luft{background:url("edit/thumb_luft.png")no-repeat center;}
     .edit-designer{background:url("edit/thumb_design.jpg")no-repeat center;}
+    .illust-bg-one{background:url("illust/2018_4.jpg")no-repeat center;}
     /*Image - Common*/
-    .self,.school-korea, .school-risd, .work-adi, .work-pxd, .work-risd, .ui-mc, .ui-dp, .ui-mong,.ui-sema, .ui-retro,.ui-decker,.bi-sema,.bi-sign,.bi-lotus, .bi-risd, .type-risd, .type-sejong, .edit-cat, .edit-blackhole, .edit-blade , .edit-luft, .edit-designer{
+    .self,.school-korea, .school-risd, .work-adi, .work-pxd, .work-risd, .ui-mc, .ui-dp, .ui-mong,.ui-sema, .ui-retro,.ui-decker,.bi-sema,.bi-sign,.bi-lotus, .bi-risd, .type-risd, .type-sejong, .edit-cat, .edit-blackhole, .edit-blade , .edit-luft, .edit-designer,.illust-bg-one{
         -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
         background-size: cover;
     }
