@@ -32,6 +32,7 @@ body{
 
 img{width:100%;display:inline-block;}
 
+/* VIDEO */
 .video{width:100%; max-width:720px; margin: 0 auto;}
 iframe{width:100%;height:420px;}
 @media screen and (max-width:800px){iframe{height:200px;}}
@@ -227,16 +228,14 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     .edit-luft{background:url("edit/thumb_luft.jpg")no-repeat center;}
     .edit-designer{background:url("edit/thumb_design.jpg")no-repeat center;}
     /* ILLUST */
-    .illust-bg-crane{background:url("illust/2018_4.jpg")no-repeat center;}
-    .illust-bg-bear{background:url("illust/2017_4.jpeg")no-repeat center;}
+    .illust-crane{background:url("illust/2018_4.jpg")no-repeat center;}
+    .illust-bear{background:url("illust/2017_4.jpeg")no-repeat center;}
+    .illust-lorde{background:url("illust/thumb_2020.jpg")no-repeat center;}
     /*Image - Common*/
-    .self,.school-korea, .school-risd, .work-adi, .work-pxd, .work-risd, .ui-mc, .ui-dp, .ui-mong,.ui-sema, .ui-retro,.ui-decker,.bi-sema,.bi-sign,.bi-lotus, .bi-risd, .type-sejong, .edit-cat, .edit-blackhole, .edit-blade , .edit-luft, .edit-designer,.illust-bg-crane,.illust-bg-bear,.document{
+    .self,.school-korea, .school-risd, .work-adi, .work-pxd, .work-risd, .ui-mc, .ui-dp, .ui-mong,.ui-sema, .ui-retro,.ui-decker,.bi-sema,.bi-sign,.bi-lotus, .bi-risd, .type-sejong, .edit-cat, .edit-blackhole, .edit-blade , .edit-luft, .edit-designer,.illust-crane,.illust-bear,.illust-lorde,.document{
         -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
         background-size: cover;
     }
-
-/* VIDEO */
-.video{width:100%;height:100%;}
 
 /* NAVBAR */
 .nav-wrapper{
@@ -326,8 +325,7 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
 
 .illust{
     width:auto;
-    height:auto;
-    max-height:80vh;
+    height:72vh;
     margin-left:auto;
     margin-right:auto;
     display:block;
