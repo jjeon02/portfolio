@@ -388,6 +388,7 @@ ul li a{text-decoration:none;font-weight:400;transition: .2s linear;}
     }
     .illust{
         width:100%;
+        height:auto;
         margin-bottom:24px;
     }
 }
