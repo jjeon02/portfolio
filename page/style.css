@@ -459,9 +459,7 @@ section{width:100%;padding:24px;max-width:1080px;margin: auto;background: var(--
     border-right:2px solid var(--blue);
 }
 
-.arrow-wrapper-next{
-    right: 0;
-}
+.arrow-wrapper-next{right: 0;}
 
 .slide-arrow{
     position:absolute;
