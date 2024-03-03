@@ -15,53 +15,119 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     </head>
     <body>
-
-        <div class="m-scroll">
-            <div class="m-scroll__title">
-                <div> 
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
-                </div>
-            </div>
-        </div>
-
-        <div class="m-scroll">
-            <div class="m-scroll__opposite">
-                <div> 
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
-                </div>
-            </div>
-        </div>
-
-        <div class="m-scroll">
-            <div class="m-scroll__title">
-                <div> 
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
-                </div>
-            </div>
-        </div>
-
-        <div class="m-scroll">
-            <div class="m-scroll__opposite">
-                <div> 
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
-                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
-                </div>
-            </div>
+        
+        <div id="sideNav" class="sidenav">
+            <button class="closebtn" onclick="closeNav()" style="text-decoration: none;">
+                CLOSE
+            </button>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <!-- <div class="border"></div>
+            <p><a href="https://www.linkedin.com/in/jueun-jeon-0436/" target="_blank" style="color:var(--aaaGrey);">LINKEDIN</a></p>
+            <p><a href="https://www.behance.net/jueunjeon" target="_blank">BEHANCE</a></p>
+            <p><a href="mailto:june.jeon@gmail.com" target="_blank">EMAIL</a></p>
+            <p><a href="about.html#resume">RESUME</a></p> -->
         </div>
         
-        <section>
-            <h6>
-                Website Moved! Go to <a href="http://www.jueunjeon.design/">http://www.jueunjeon.design/</a></h6>
-        </section>
-       
+        <nav class="nav-wrapper" aria-label="Main">
+            <div class="nav-container">
+                <h6><a href="index.html" class="icon">J.JEON</a></h6>
+                <ul>
+                    <li><a href="#works">WORKS</a></li>
+                    <!-- <li> <a href="#archive">ARCHIVE</a></li> -->
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+                <button class="nav-button" class="margin:0px 0px;" onclick="openNav()"><p>MENU</p></button>
+            </div>
+        </nav>
+
+        <!-- <div class="m-scroll">
+            <div class="m-scroll__title">
+                <div> 
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
+                </div>
+            </div>
+        </div>
+
+        <div class="m-scroll">
+            <div class="m-scroll__opposite">
+                <div> 
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
+                </div>
+            </div>
+        </div>
+
+        <div class="m-scroll">
+            <div class="m-scroll__title">
+                <div> 
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
+                </div>
+            </div>
+        </div>
+
+        <div class="m-scroll">
+            <div class="m-scroll__opposite">
+                <div> 
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>  
+                    <h1>Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;Website Moved!&nbsp;</h1>        
+                </div>
+            </div>
+        </div>
+         -->
+
+        <div class="index-hero-gif"></div>
+
+        <div class="index-wrapper">
+            <section class="center">
+                <h1 class="hero-text">Graphic Design is my passion</h1>
+                <h6>For UX/UI works go to <a href="http://www.jueunjeon.design/">jueunjeon.design</a></h6>
+                <h6>!!! Work in Progress !!!</h6>
+            </section>
+
+            <section id="works"></section>
+            <section>
+                <div class="grid-flex">
+                    <div class="grid-box">
+                        <div class="index-thumb">
+                            <img src="thumb/thumb_risd.jpg">
+                            <h6><a>Strapforyou</a></h6>
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="index-thumb">
+                            <img src="thumb/thumb_risd.jpg">
+                            <h6><a href="page/page_risd.html">Strapforyou</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-flex">
+                    <div class="grid-box">
+                        <div class="index-thumb">
+                            <img src="thumb/thumb_risd.jpg">
+                            <h6><a>Illustration</a></h6>
+                        </div>
+                    </div>
+                    <div class="grid-box">
+                        <div class="index-thumb">
+                            <img src="thumb/thumb_risd.jpg">
+                            <h6><a>Exhibition</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+
+        <footer id ="footer"></footer>
         <!--JS-->
         <script src="script.js"></script>
-        <script src="footer.js"></script>
         
     </body>
 </html>
