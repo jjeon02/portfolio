@@ -100,6 +100,7 @@ h6,p{font-size:16px;line-height:1.8;}
 h6{font-weight: 400;}
 p span, button, .case-study, span{font-size:16px;line-height:1.8;font-weight:400;}
 p,ul,li,p a,ol{font-weight:200;}
+button{background:none;border:none;color:var(--text);}
 
 .grid-text > button{
     padding: 4px 16px;
@@ -130,8 +131,21 @@ ul li a{text-decoration:none;font-weight:300;}
 h2 a:hover,h6 a:hover,ul li a:hover, p a:hover{color:blue;}
 .center{text-align:center;}
 
-
-
+.hero-text{
+    font-family: "pixelVarious";
+    font-size: calc(4.8em + 1.2vw);
+    line-height:1.2;
+    letter-spacing: 0.05em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    margin:0;
+}
+@font-face {
+    font-family: "pixelVarious";
+    src: url("RetroFutureGX.ttf");
+    font-weight: 100 900;
+}
 /*Infinite Slide*/
 /* .m-scroll {
     display: block;
@@ -332,7 +346,7 @@ footer > a, footer >strong {background:var(--background);}
     margin:0;
     padding: 4px 8px;
     font-weight: 400;
-    /* background: var(--background); */
+    background: var(--background);
 }
 .nav-container >ul>li > a{  font-weight: 400; font-weight: 400; background: var(--background);}
 .nav-button{
@@ -349,7 +363,8 @@ footer > a, footer >strong {background:var(--background);}
     color: var(--blue);
     cursor:grab;
 }
-.nav-button > p{font-size: 20px;}
+.nav-button > p{font-size: 20px;background:var(--background);}
+.closebtn{font-size:20px;}
 
 /* NAV RELATIVE*/
 @media screen and (max-width: 1480px) and (min-width:1075px){
@@ -371,7 +386,6 @@ footer > a, footer >strong {background:var(--background);}
         outline:none;
         background:none;
         padding: 6px 12px;
-        background:var(--background);
     }
 }
 
