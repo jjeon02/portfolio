@@ -53,6 +53,12 @@ body{
 
 img{width:100%;display:inline-block;object-fit: fill;vertical-align: middle;}
 
+@font-face {
+    font-family: "pixelVarious";
+    src: url("RetroFutureGX.ttf");
+    font-weight: 100 900;
+}
+
 /* VIDEO */
 .video{width:100%; max-width:600px; margin: 0 auto;display:block;}
 iframe{width:100%;height:540px;margin: 0 auto;}

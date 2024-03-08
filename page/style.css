@@ -332,7 +332,7 @@ footer > a, footer >strong {background:var(--background);}
     margin:0;
     padding: 4px 8px;
     font-weight: 400;
-    background: var(--background);
+    /* background: var(--background); */
 }
 .nav-container >ul>li > a{  font-weight: 400; font-weight: 400; background: var(--background);}
 .nav-button{
