@@ -15,6 +15,70 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            .pixelVarious{
+                font-family: "pixelVarious";
+                font-size: calc(4.8em + 1.2vw);
+                line-height:1.2;
+                letter-spacing: 0.05em;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                hyphens: auto;
+                margin:0;
+            }
+            @font-face {
+                font-family: "pixelVarious";
+                src: url("RetroFutureGX.ttf");
+                font-weight: 100 900;
+            }
+            .input{
+                width:100%;
+                height: 4em;
+                background-color:var(--background);
+                outline:none;
+                color:var(--text);
+                font-family: "pixelVarious";
+                font-size: calc(4.8em + 1.2vw);
+                line-height:1.2;
+                letter-spacing: 0.05em;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                hyphens: auto;
+                margin:0;
+                text-align:center;
+                border: 1px solid var(--line);
+            }
+
+            .slider{
+                -webkit-appearance: none;
+                width: 50%;
+                margin: 2em 25% 2em 25%;
+                height: 1px;
+                background: var(--line);
+                outline: none;
+                -webkit-transition: .2s;
+                transition: .2s;
+            }
+
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 30px;
+                height: 30px;
+                background: var(--background);
+                border: 1px solid  var(--line);
+                border-radius:50%;
+                cursor: pointer;
+            }
+            form{
+                top:0;
+                border:none;
+                padding: 1.2em;
+                box-sizing: border-box;
+                width:84%;
+                margin: 0 8% 0 8%;
+            }
+        </style>
     </head>
     <body>
         <div id="sideNav" class="sidenav">
@@ -50,6 +114,7 @@
                     <p>
                         Retro Future Archive is a project about how people from the past imagined the future.
                     </p>
+                    <p><a href="https://www.jueunjeon.design/jueunwebtype2020/project_2-3/index.html" target="_blank">Original Website</a></p>
                 </div>
             </div>
         </section>
@@ -60,11 +125,31 @@
         <img src="retro/retro_4.png" class="slide" style= "background: var(--text);">
         <img src="retro/retro_5.png" class="slide" style= "background: var(--text);">
 
+        <section></section>
+        <section>
+            <h1 class="center">Try it by yourself</h1>
+            <div class="center">
+                <textarea type="text" id ="form" class="input" rows="4" cols="50">The quick brown fox jumps over the lazy dog.</textarea>
+            </div>
+    
+            <input type="range" id="range" min="100" max="900" step="0.1" value="100" class="slider"/>
+        </section>
+        <section></section>
+
         <footer id="footer"></footer>
         <!-- JS -->
         <!--JS-->
         <script src="script.js"></script>
         <script src="footer.js"></script>
+        <script>
+            var range = document.querySelector("#range");
+            var form = document.querySelector("#form");
+
+            range.addEventListener("input", function() {
+            form.style["font-weight"] = this.value;
+            });
+
+        </script>
 
     </body>
 </html>
