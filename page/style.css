@@ -53,6 +53,12 @@ body{
 
 img{width:100%;display:inline-block;object-fit: fill;vertical-align: middle;}
 
+@font-face {
+    font-family: "pixelVarious";
+    src: url("RetroFutureGX.ttf");
+    font-weight: 100 900;
+}
+
 /* VIDEO */
 .video{width:100%; max-width:600px; margin: 0 auto;display:block;}
 iframe{width:100%;height:540px;margin: 0 auto;}
@@ -87,13 +93,6 @@ a:after{color: var(--text);}
 h1{font-size:40px;line-height:1.2;font-weight:400;text-transform: uppercase;margin-bottom:12px;}
 h2{font-size:28px;line-height:1.6;font-weight:200;}
 
-
-.hero-text{
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-}
 /*Main Page Grid Title Text*/
 h5{font-size:24px;line-height:1.4;font-weight:600;}
 
@@ -333,8 +332,9 @@ footer > a, footer >strong {background:var(--background);}
     margin:0;
     padding: 4px 8px;
     font-weight: 400;
+    background: var(--background);
 }
-.nav-container >ul>li > a{  font-weight: 400; background: var(--background);}
+.nav-container >ul>li > a{  font-weight: 400; font-weight: 400; background: var(--background);}
 .nav-button{
     display:none;
     float:right;

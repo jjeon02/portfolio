@@ -87,13 +87,6 @@ a:after{color: var(--text);}
 h1{font-size:40px;line-height:1.2;font-weight:400;text-transform: uppercase;margin-bottom:12px;}
 h2{font-size:28px;line-height:1.6;font-weight:200;}
 
-
-.hero-text{
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-}
 /*Main Page Grid Title Text*/
 h5{font-size:24px;line-height:1.4;font-weight:600;}
 

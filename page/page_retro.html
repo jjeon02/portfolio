@@ -16,16 +16,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <style>
-            .pixelVarious{
-                font-family: "pixelVarious";
-                font-size: calc(4.8em + 1.2vw);
-                line-height:1.2;
-                letter-spacing: 0.05em;
-                overflow-wrap: break-word;
-                word-wrap: break-word;
-                hyphens: auto;
-                margin:0;
-            }
             @font-face {
                 font-family: "pixelVarious";
                 src: url("RetroFutureGX.ttf");
@@ -50,7 +40,6 @@
             }
 
             .slider{
-                -webkit-appearance: none;
                 width: 50%;
                 margin: 2em 25% 2em 25%;
                 height: 1px;
@@ -60,16 +49,18 @@
                 transition: .2s;
             }
 
+            .slider, .slider::-webkit-slider-thumb{ -webkit-appearance: none;}
+
             .slider::-webkit-slider-thumb {
-                -webkit-appearance: none;
                 appearance: none;
-                width: 30px;
-                height: 30px;
+                width: 24px;
+                height: 24px;
                 background: var(--background);
                 border: 1px solid  var(--line);
                 border-radius:50%;
                 cursor: pointer;
             }
+
             form{
                 top:0;
                 border:none;
@@ -85,13 +76,13 @@
             <button class="closebtn" onclick="closeNav()" style="text-decoration: none;">
                 CLOSE
             </button>
-            <p><a href="https://www.jueunjeon.design/portfolio/">Home</a></p>
+            <p><a href="https://www.jueunjeon.design/portfolio/#works">Home</a></p>
             <p><a href="https://www.jueunjeon.design/portfolio/about.html">About</a></p>
         </div>
         
         <nav class="nav-wrapper" aria-label="Main">
             <div class="nav-container">
-                <h6><a href="https://www.jueunjeon.design/portfolio/" class="icon">Back to Home</a></h6>
+                <h6><a href="https://www.jueunjeon.design/portfolio/#works" class="icon">Back to Home</a></h6>
                 <ul>
                     <li><a href="https://www.jueunjeon.design/portfolio/about.html">ABOUT</a></li>
                 </ul>
@@ -136,6 +127,23 @@
         </section>
         <section></section>
 
+        <section>
+            <h1>See More Works</h1>
+            <div class="grid-first">
+                <div class="grid-box">
+                    <div class="index-thumb">
+                        <img src="thumb/thumb_gender.jpg">
+                        <h6><a href="page_gender.html">Gender & Robot</a></h6>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <div class="index-thumb">
+                        <img src="thumb/thumb_watch.jpg">
+                        <h6><a href="page_watch.html">Strapforyou</a></h6>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer id="footer"></footer>
         <!-- JS -->
         <!--JS-->
