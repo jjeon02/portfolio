@@ -44,11 +44,10 @@ body{
 @media screen and (max-width:1200px){::-webkit-scrollbar {display: none;}}
 
 :root {
-    --background:#000;
+    --background:#fff;
     --line: #666;
-    --text: #fff;
+    --text: #000;
     --blue: #0000ff;
-    /* --grey: #ededed; */
 }
 
 img{width:100%;display:inline-block;object-fit: fill;vertical-align: middle;}
@@ -147,8 +146,9 @@ h2 a:hover,h6 a:hover,ul li a:hover, p a:hover{color:blue;}
     src: url("RetroFutureGX.ttf");
     font-weight: 100 900;
 }
-/*Infinite Slide*/
-/* .m-scroll {
+
+/* INFINITE SLIDE */
+.m-scroll {
     display: block;
     position: relative;
     width:100%;
@@ -186,7 +186,7 @@ margin: 0; font-size: 36px;line-height:0; transition: all 2s ease;
 @keyframes scrollOpposite {
     from   { transform: translateX(-50%); }
     to { transform: translateX(0%); }
-} */
+} 
 
 /* Unicode Arrow */
 .arrow-uni{font-size:large;padding-left:6px;}

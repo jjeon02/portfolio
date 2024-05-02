@@ -44,11 +44,10 @@ body{
 @media screen and (max-width:1200px){::-webkit-scrollbar {display: none;}}
 
 :root {
-    --background:#000;
+    --background:#fff;
     --line: #666;
-    --text: #fff;
+    --text: #000;
     --blue: #0000ff;
-    /* --grey: #ededed; */
 }
 
 img{width:100%;display:inline-block;object-fit: fill;vertical-align: middle;}
