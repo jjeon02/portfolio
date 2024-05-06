@@ -314,6 +314,9 @@ footer > a, footer >strong {background:var(--background);}
     background-color:var(--background);
 }
 
+.margin-24{margin-bottom:24px;}
+.margin-48{margin-bottom:48px;}
+
 /* NAVBAR */
 .nav-wrapper{
     position:fixed;margin:0;padding:0;top:0;
@@ -337,10 +340,9 @@ footer > a, footer >strong {background:var(--background);}
 .nav-container >ul{float:right;list-style: none;font-weight: 400;}
 .nav-container >ul>li{
     display:inline-block;
-    margin:0;
-    padding: 4px 8px;
+    /* margin:0; */
+    margin: 4px 8px;
     font-weight: 400;
-    background: var(--background);
 }
 .nav-container >ul>li > a{  font-weight: 400; font-weight: 400; background: var(--background);}
 .nav-button{
