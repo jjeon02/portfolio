@@ -12,12 +12,13 @@
     --grey-dark: #34424E;
     --grey-dark-hover: #272D33;
     --grey-black: #212024; 
-    --grey-shadow: rgba(33, 32, 36, 0.20);
+    --grey-shadow: rgba(77, 77, 81, 0.1);
     
     /* FONT */
     --font-default: "IBM Plex Sans KR", sans-serif;
     --weight-default:400;
-    --weight-SemiBold:500;
+    --weight-SemiBold:600;
+    --weight-Bold:800;
     --size-title: 1.8em;
     --size-h3: 1.4em;
     --size-default: 1.2em;
@@ -25,17 +26,22 @@
     --height-default: 1.6;
     --height-narrow: 1.2;
     
-    /* NUM */
-    --margin-section-gap: 28px;
+    /* MARGIN */
+    --margin-section-gap: 42px;
+    --margin-section-bottom: 36px;
     --margin-section: 24px;
     --margin-default: 20px;
     --margin-title: 6px;
-    --margin-title-bottom: 18px;
-    --line-width: 1.2px;
+    --margin-title-bottom: 12px;
+
+    /* SIZE */
+    --width-figure: 840px;
     --width-section: 720px;
     --width-article: 600px;
     --icon-size: 20px;
-    --radius-default: 8px;
+
+    /* RADIUS */
+    --radius-default: 6px;
     --radius-round:100px;
 }
 
@@ -47,9 +53,12 @@
         --margin-default: 18px;
         --margin-title: 4px;
         --margin-title-bottom: 18px;
-        --line-width: 1.6px;
+
+        /* SIZE */
         --icon-size: 24px;
-        --radius-default: 6px;
+
+        /* RADIUS */
+        --radius-default: 4px;
     }
 }
 
@@ -68,4 +77,5 @@
 
 body{background-color: var(--grey-extralight);}
 .grey-bg{background-color:var(--grey-light); color:var(--grey-black);}
-footer{background-color:var(--grey-black);color: var(--grey-light);}
+.dark-bg, footer{background-color:var(--grey-black);color: var(--grey-light);}
+.dark-bg tr, .dark-bg h1{border-bottom: 1px solid var(--grey-text-light);}   

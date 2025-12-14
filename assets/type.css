@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
 
 
-h1, h2, h3, h4, h5, h6, p, li, button, td, tr, th{
+h1, h2, h3, h4, h5, h6, p, li, button, td, tr, th, figcaption{
     font-family: var(--font-default);
     font-style: normal;
     line-height: var(--height-default);
@@ -17,10 +17,10 @@ a:visited:hover{color:var(--primary);}
 
 h1, h2{
     font-size: var(--size-title);
-    font-weight: var(--weight-SemiBold);
+    font-weight: var(--weight-Bold);
     text-transform:uppercase;
     padding-bottom: var(--margin-title);
-    margin-bottom: var(--margin-title);
+    margin-bottom: var(--margin-title-bottom);
     border-bottom: 1px solid var(--grey-dark);
 }
 
@@ -52,3 +52,11 @@ ul{
 }
 
 li{display: list-item;}
+
+figcaption{
+    font-size:var(--size-caption);
+    color: var(--grey-text-light);
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: var(--margin-default);
+}
