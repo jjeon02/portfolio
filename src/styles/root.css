@@ -1,0 +1,54 @@
+:root {
+  /* COLOR */
+  --white: #FFFFFF;
+  --grey-extralight: #E9EEF5;
+  --grey-light: #D5DEEA;
+  --grey-text: #677790;
+  --grey-line:#4E6489;
+  --grey-dark: #212024;
+  --point-blue: #1a60f9;
+  --point-yellow: #FFE57E;
+
+  /* PADDING */
+  --padding-sm:8px;
+  --padding-md: 12px;
+  --padding-object: 20px;
+  --padding-section: 24px;
+  --max-width: 840px;
+  --max-width-project: 960px;
+
+  /* FONT-SIZE */
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.32rem;
+  --font-size-xl: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+    /* PADDING */
+    --padding-section: 20px;
+    --padding-object: 16px;
+
+    /* FONT-SIZE */
+    --font-size-md: 1.2rem;
+    --font-size-lg: 1.6rem;
+    --font-size-xl: 2rem;
+  }
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  scroll-behavior: smooth;
+}
+*::selection{
+  background-color: var(--point-blue);
+  color: var(--white);
+}
+
+body {
+  margin: 0;
+  background-color: var(--grey-extralight);
+}
+
+

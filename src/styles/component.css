@@ -1,0 +1,40 @@
+/* main content */
+
+.nav-gap {
+  height: 42px;
+}
+
+/* ================== LIST ================== */
+.list-wrapper{
+  width:100%;
+  margin:0;
+}
+
+.list-title{
+  padding: 0 0 var(--padding-sm) 0;
+}
+
+.list{
+  width: 100%;
+  display:flex;
+  gap: var(--padding-md);
+  padding: var(--padding-sm) 0;
+}
+
+.list-dark-line{
+  color: var(--grey-dark);
+  border-bottom: 1px solid var(--grey-line);
+}
+
+.list-light-line{
+  color: var(--grey-extralight);
+  border-bottom: 1px solid var(--grey-extralight);
+}
+
+.list-light-line > p, .list-light-line > p > a{
+  color: var(--grey-extralight);
+}
+
+.list-first{
+  flex:1;
+}

@@ -1,3 +1,0 @@
-cd /Users/jeonjueun/Desktop/github/portfolio
-bundle exec jekyll serve
-press ctrl-c to stop.
