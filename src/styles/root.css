@@ -8,8 +8,12 @@
   --grey-dark: #212024;
   --point-blue: #1a60f9;
   --point-yellow: #FFE57E;
+  --btn-dark: #34424E;
+  --btn-dark-hover: #283139;
+  --btn-top:  #516373;
 
   /* PADDING */
+  --padding-xs:6px;
   --padding-sm:8px;
   --padding-md: 12px;
   --padding-object: 20px;
@@ -17,10 +21,15 @@
   --max-width: 840px;
   --max-width-project: 960px;
 
+  /* RADIUS */
+  --radius-sm: 2px;
+
   /* FONT-SIZE */
-  --font-size-md: 1.2rem;
-  --font-size-lg: 1.32rem;
-  --font-size-xl: 2rem;
+  --font-size-sm: 1.12rem;
+  --font-size-md: 1.18rem;
+  --font-size-lg: 1.4rem;
+  --font-size-xl: 1.4rem;
+  --font-size-xxl: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {

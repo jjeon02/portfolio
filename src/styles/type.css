@@ -18,11 +18,12 @@ h1, h2, h3, h4, h5, h6, p, a{
 h1{
   line-height: 1.2;
   font-size: var(--font-size-xl);
+  text-transform: uppercase;
 }
 
 h5{
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: var(--font-size-lg);
 }
 
@@ -34,10 +35,15 @@ h6{
 
 p, ul li, ol li, button {
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.6;
   font-size: var(--font-size-md);
 }
 
+caption{
+  margin: 0;
+  line-height: 1;
+  font-size: var(--font-size-sm);
+}
 
 a{text-decoration: none;}
 
@@ -51,3 +57,4 @@ a:hover {
 
 .center{text-align:center;}
 .all-cap{text-transform: uppercase;}
+.grey-text{color: var(--grey-text);}

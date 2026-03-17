@@ -38,3 +38,36 @@
 .list-first{
   flex:1;
 }
+
+/* ================== BUTTON ================== */
+
+.btn-default{
+  border: none;
+  background: var(--btn-dark);
+  color: var(--white);
+  padding: var(--padding-sm) var(--padding-md);
+  border-top: 1px solid var(--btn-top);
+  border-left: 1px solid var(--btn-top);
+  border-bottom: 1px solid var(--grey-dark);
+  border-right: 1px solid var(--grey-dark);
+}
+
+.btn-default:hover{background: var(--btn-dark-hover);}
+
+.btn-text{
+  border: none;
+  background: none;
+}
+.btn-text:hover{color: var(--point-blue);}
+.btn-text-light{color: var(--grey-extralight);}
+
+/* ================== ETC ================== */
+
+.badge{
+  background-color: var(--grey-light);
+  color: var(--grey-dark);
+  padding: 4px 4px 2px 4px;
+  border: 1px solid var(--grey-line);
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}

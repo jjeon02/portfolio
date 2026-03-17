@@ -69,6 +69,77 @@ nav button{text-transform: uppercase;}
   }
 }
 
+/* ================== WORK CARD ================== */
+
+.section-title {
+  padding: var(--padding-sm) 0;
+  border-bottom: 1px solid var(--grey-line);
+  margin-bottom: 0;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card {
+  display: flex;
+  gap: var(--padding-object);
+  padding: var(--padding-object) 0;
+  border-bottom: 1px solid var(--grey-line);
+}
+
+.work-card-image {
+  flex: 2;
+  background-color: var(--grey-line);
+  min-height: 240px;
+  overflow: hidden;
+  padding: var(--padding-md);
+  aspect-ratio: 480/300;
+}
+
+.work-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card-desc{
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.work-card-from {
+  margin: 2px 0;
+  height:auto;
+  color: var(--point-blue);
+}
+
+.work-card-tag{
+  display: inline-flex;
+}
+
+@media screen and (max-width: 768px) {
+  .work-card {
+    flex-direction: column;
+  }
+  .work-card-image {
+    width: 100%;
+    min-height: 200px;
+  }
+  .work-card-info > p {
+  flex: 1 0 0;
+  margin-bottom: var(--padding-sm);
+  }
+
+}
 
 /* ================== FOOTER ================== */
 

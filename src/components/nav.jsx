@@ -9,7 +9,7 @@ function Navbar() {
       <h6><Link to="/home">Jueun Jeon</Link></h6>
 
       <button
-        className="nav-toggle"
+        className="nav-toggle btn-text"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >

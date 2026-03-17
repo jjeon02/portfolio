@@ -3,7 +3,7 @@ function footer() {
     <footer>
         <section>
           <div class="list-wrapper">
-            <h6 class="list-light-line center all-cap list-title">Let's Keep Connected</h6>
+            <h5 class="list-light-line center all-cap list-title">Let's Keep Connected</h5>
             <div class="list list-light-line">
               <p class="list-first">Linkedin</p>
               <p>
