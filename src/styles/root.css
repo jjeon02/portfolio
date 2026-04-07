@@ -3,33 +3,43 @@
   --white: #FFFFFF;
   --grey-extralight: #E9EEF5;
   --grey-light: #D5DEEA;
+  --grey-md: #bcc8d9;
+  --grey-md-hover: #a8b3c4;
   --grey-text: #677790;
-  --grey-line:#4E6489;
+  --grey-line:#617089;
   --grey-dark: #212024;
   --point-blue: #1a60f9;
+  --point-blue-dark:#255486;
+  --point-blue-light: #7ba5ff;
   --point-yellow: #FFE57E;
-  --btn-dark: #34424E;
-  --btn-dark-hover: #283139;
-  --btn-top:  #516373;
+  --btn-dark:#464c5c;
+  --btn-dark-hover: #242a30;
+  --btn-top:  #8b9dab;
 
   /* PADDING */
+  --padding-thin:2px;
+  --padding-xxs:4px;
   --padding-xs:6px;
   --padding-sm:8px;
   --padding-md: 12px;
+  --padding-lg: 16px;
   --padding-object: 20px;
   --padding-section: 24px;
   --max-width: 840px;
   --max-width-project: 960px;
+  --padding-header: 36px;
 
   /* RADIUS */
   --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-round: 999px;
 
   /* FONT-SIZE */
   --font-size-sm: 1.12rem;
   --font-size-md: 1.18rem;
   --font-size-lg: 1.4rem;
-  --font-size-xl: 1.4rem;
-  --font-size-xxl: 1.6rem;
+  --font-size-xl: 1.6rem;
+  --font-size-xxl: 2.0rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -37,6 +47,7 @@
     /* PADDING */
     --padding-section: 20px;
     --padding-object: 16px;
+    --padding-header: 20px;
 
     /* FONT-SIZE */
     --font-size-md: 1.2rem;
@@ -55,9 +66,21 @@
   color: var(--white);
 }
 
-body {
-  margin: 0;
+body{
+  margin:0;
   background-color: var(--grey-extralight);
 }
 
+::-webkit-scrollbar{
+  width: var(--padding-sm);
+  background-color: var(--grey-light);
+  border-left: 1px solid var(--grey-line);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--grey-line);
+}
+
+a:hover, button:hover{
+  cursor: pointer;
+}

@@ -2,7 +2,7 @@ function Project2() {
   return (
     <main>
       <div className="nav-gap"></div>
-      <h1>Duolingo Redesign</h1>
+      <h1>ai.sell</h1>
     </main>
   );
 }

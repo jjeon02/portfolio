@@ -1,12 +1,21 @@
 import WorkCard from '../components/WorkCard';
+import Card from '../components/Card';
+import Cursor from './home/arrow.svg';
+
+import project1 from './project-1/thumb.jpg';
+import project2 from './project-2/thumb.jpg';
+import project3 from './project-3/thumb.jpg';
+import project4 from './project-4/thumb.jpg';
+
+import { IconDownload } from '../components/icons';
 
 const projects = [
   {
     title: 'Belinker Cloud Service',
     from: 'From Work',
     tags: ['UX/UI'],
-    description: 'Improving the access control for manufacturing document management system.',
-    image: '',
+    description: 'Improving the permission control for manufacturing document management system.',
+    image: project1,
     link: '/project-1',
   },
   {
@@ -14,7 +23,7 @@ const projects = [
     from: 'School Project',
     tags: ['UX/UI'],
     description: 'An A.I. tool that provides better B2B sales experience for B2B sellers',
-    image: '',
+    image: project2,
     link: '/project-2',
   },
     {
@@ -22,7 +31,7 @@ const projects = [
     from: 'School Project',
     tags: ['Accessible UI'],
     description: 'Accessible UI design for NJ Transit application.',
-    image: '',
+    image: project3,
     link: '/project-3',
   },
   {
@@ -30,27 +39,63 @@ const projects = [
     from: 'From Work',
     tags: ['Web Design'],
     description: 'Designing official website for PNY Technologies.',
-    image: '',
+    image: project4,
     link: '/project-4',
   },
 ];
+
+const cards = [
+  {
+    imageOne: project1,
+    titleOne: 'Illustration',
+    descOne: 'Personal illustrations including digital and traditional arts.',
+    linkOne: 'https://jueunjeon.work/art/',
+    imageTwo: project2,
+    titleTwo: 'Behance',
+    descTwo: 'Mainly focused on graphic design works from school projects.',
+    linkTwo: 'https://www.behance.net/jueunjeon',
+  },
+]
 
 function Home() {
   return (
     <main>
       <div className="nav-gap"></div>
+      <header className="home-header">
+        {/* TEXT */}
+        <div className="home-title-header">
+          <div className="home-title-content">
+            <div className="text-wrapper-xs">
+              <h2>Hi! This is Jueun Jeon and I'm a UX/UI designer</h2>
+              <p>I believe UX design is about designing <strong className="blue-text">frames</strong> and <strong className="blue-text">tools</strong> for people.</p>
+            </div>
+            <button className="btn-secondary btn-size-lg" onClick={() => window.open('/resume_jueun_jeon.pdf', '_blank')}>
+              Download Resume
+              <IconDownload />
+            </button>
+          </div>
+          {/* IMAGE */}
+          <div className="home-title-img-wrapper">
+            <img src={Cursor} alt="cursor symbol" />
+          </div>
+        </div>
+      </header>
       <section>
-        <h1>Hi! I'm a UX/UI Designer</h1>
-        <p>My name is Jueun Jeon, and I design both what we see and <span class="grey-text">don't see</span> on the screen.</p>
-      </section>
-      <section>
-        <h1 className="section-title">FEATURED WORKS</h1>
+        <h2 className="work-section-title">Featured Works</h2>
         <div className="work-list">
             {projects.map(project => (
               <WorkCard key={project.title} {...project} />
             ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="center title-default">Other Works</h2>
+        {cards.map((card, i) => (
+          <Card key={i} {...card} />
+        ))}
+      </section>
+
     </main>
   );
 }

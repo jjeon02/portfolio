@@ -1,0 +1,125 @@
+/* ================== TITLE ================== */
+
+.home-header{
+  padding: var(--padding-section);
+  background:var(--grey-dark);
+}
+
+.home-title-header{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    align-items: flex-start;
+    gap: var(--padding-object);
+    align-self: stretch;
+    border-radius: 0 0 48px 0;
+    border: 2.4px solid var(--grey-line);
+}
+
+.home-title-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--padding-md);
+
+}
+
+.home-title-content h2, .home-title-content p{
+    color: var(--white);
+}
+
+.home-title-content > .btn-secondary{
+  max-width: 232px;  
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title-img-wrapper{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  align-self: stretch;
+}
+
+@media screen and (max-width: 768px) {
+  .home-title-header{
+    flex-direction: column;
+  }
+  .home-title-content > .btn-secondary{
+    max-width: 100%;
+  }
+  .home-title-img-wrapper{
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+  }
+}
+
+
+/* ================== WORK CARD ================== */
+
+.work-section-title {
+  padding: var(--padding-sm) 0;
+  border-bottom: 1px solid var(--grey-line);
+  margin-bottom: 0;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card {
+  display: flex;
+  gap: var(--padding-object);
+  padding: var(--padding-object) 0;
+  border-bottom: 1px solid var(--grey-line);
+}
+
+.work-card-image {
+  flex: 2;
+  background-color: var(--grey-line);
+  background-size: cover;
+  background-position: center;
+  min-height: 240px;
+  overflow: hidden;
+  padding: var(--padding-md);
+  aspect-ratio: 1200/800;
+}
+
+.work-card-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card-desc{
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.work-card-from {
+  margin: 2px 0;
+  height:auto;
+  color: var(--point-blue);
+}
+
+.work-card-tag{
+  display: inline-flex;
+}
+
+@media screen and (max-width: 768px) {
+  .work-card {
+    flex-direction: column;
+  }
+  .work-card-image {
+    width: 100%;
+    min-height: 200px;
+  }
+  .work-card-info > p {
+  flex: 1 0 0;
+  margin-bottom: var(--padding-sm);
+  }
+
+}
+
