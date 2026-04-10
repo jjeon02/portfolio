@@ -12,10 +12,10 @@ function Card({ imageOne, titleOne, descOne, linkOne, imageTwo, titleTwo, descTw
           style={imageOne ? { backgroundImage: `url(${imageOne})` } : {}}
         />
         <div className="text-wrapper-xs">
-          <h6 className="work-card-from">{titleOne}</h6>
-          <p className="work-card-desc">{descOne}</p>
+          <h5>{titleOne}</h5>
+          <p>{descOne}</p>
         </div>
-        <button className="btn-txt" onClick={() => navigate(linkOne)}>
+        <button className="btn-txt" onClick={() => linkOne.startsWith('http') ? window.open(linkOne, '_blank') : navigate(linkOne)}>
               See Works <IconArrowRight />
         </button>
       </div>
@@ -28,10 +28,10 @@ function Card({ imageOne, titleOne, descOne, linkOne, imageTwo, titleTwo, descTw
           style={imageTwo ? { backgroundImage: `url(${imageTwo})` } : {}}
         />
         <div className="text-wrapper-xs">
-          <h6 className="work-card-from">{titleTwo}</h6>
-          <p className="work-card-desc">{descTwo}</p>
+          <h5>{titleTwo}</h5>
+          <p>{descTwo}</p>
         </div>
-        <button className="btn-txt" onClick={() => navigate(linkTwo)}>
+        <button className="btn-txt" onClick={() => linkTwo.startsWith('http') ? window.open(linkTwo, '_blank') : navigate(linkTwo)}>
               See Works <IconArrowRight />
           </button>
       </div>

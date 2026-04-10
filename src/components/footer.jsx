@@ -25,13 +25,13 @@ function Footer() {
           <h2 className="list-light-line center all-cap list-title">Let's Keep Connected</h2>
           <div className="list list-light-line">
             <p className="list-first">Email</p>
-            <p onClick={handleCopy} style={{ cursor: 'pointer' }} className='btn-txt'>
+            <p onClick={handleCopy} className='btn-txt'>
               {EMAIL} <IconCopy /></p>
           </div>
           <div className="list list-light-line">
             <p className="list-first">Linkedin </p>
             <p className='btn-txt'>
-              <a className="light-link" href="https://www.linkedin.com/in/jueun-jeon/" target="_blank" rel="noreferrer">External Link</a>
+              <a className="light-link btn-txt" href="https://www.linkedin.com/in/jueun-jeon/" target="_blank" rel="noreferrer">External Link</a>
               <IconExternalLink />
             </p>
           </div>

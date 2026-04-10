@@ -1,5 +1,5 @@
 import ProjectHeader from '../components/ProjectHeader';
-import headerImage from './project-1/header-image.png';
+import headerImage from './project-1/header-img.webp';
 
 function Project1() {
   return (
@@ -19,7 +19,7 @@ function Project1() {
       />
       <main>
         <section>
-          <h2 class="section-title">Belinker Cloud Service?</h2>
+          <h2 class="section-title">Belinker Cloud Service</h2>
           <p>
             Belinker Cloud Service is a cloud-based file management system targeting small to mid-sized manufacturing companies in Korea.
           </p>

@@ -2,7 +2,6 @@
 
 .home-header{
   padding: var(--padding-section);
-  background:var(--grey-dark);
 }
 
 .home-title-header{
@@ -13,7 +12,7 @@
     gap: var(--padding-object);
     align-self: stretch;
     border-radius: 0 0 48px 0;
-    border: 2.4px solid var(--grey-line);
+    border: 1px solid var(--grey-line);
 }
 
 .home-title-content{
@@ -21,15 +20,10 @@
     flex-direction: column;
     width: 100%;
     gap: var(--padding-md);
-
-}
-
-.home-title-content h2, .home-title-content p{
-    color: var(--white);
 }
 
 .home-title-content > .btn-secondary{
-  max-width: 232px;  
+  max-width: 232px;
   justify-content: center;
   align-items: center;
 }
@@ -54,7 +48,6 @@
     justify-content: right;
   }
 }
-
 
 /* ================== WORK CARD ================== */
 
@@ -93,6 +86,10 @@
   flex-direction: column;
 }
 
+.work-card-info h2 {
+  color: var(--grey-dark);
+}
+
 .work-card-desc{
   flex: 1 0 0;
   align-self: stretch;
@@ -122,4 +119,3 @@
   }
 
 }
-

@@ -1,4 +1,4 @@
-body {
+body, code {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   line-height: 1.6;
@@ -6,15 +6,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: var(--font-mono);
-}
-
 h1, h2, h3, h4, h5, h6, p, a{
   margin: 0;
   color: var(--grey-dark);
 }
 
+/* ============ SIZE ============  */
 h1{
   line-height: 1.4;
   font-size: var(--font-size-xxl);
@@ -23,17 +20,14 @@ h1{
 h2{
   line-height: 1.4;
   font-size: var(--font-size-xl);
-  text-transform: uppercase;
 }
 
 h5{
-  margin: 0;
   line-height: 1.4;
   font-size: var(--font-size-lg);
 }
 
 h6{
-  margin: 0;
   line-height: 1.2;
   font-size: var(--font-size-md);
 }
@@ -50,16 +44,12 @@ caption{
   font-size: var(--font-size-sm);
 }
 
+/* ============ STYLE ============  */
+
+h2{text-transform: uppercase;}
 a{text-decoration: none;}
-
-a:hover {
-  text-decoration: none;
-  color: var(--point-blue);
-}
-
-a:visited {
-  color: var(--grey-dark);
-}
+a:hover {text-decoration: none; color: var(--point-blue);}
+a:visited {color: var(--grey-dark);}
 
 .badge{line-height: 1.12em;}
 

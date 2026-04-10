@@ -2,7 +2,7 @@ import WorkCard from '../components/WorkCard';
 import Card from '../components/Card';
 import Cursor from './home/arrow.svg';
 
-import project1 from './project-1/thumb.jpg';
+import project1 from './project-1/thumb.webp';
 import project2 from './project-2/thumb.jpg';
 import project3 from './project-3/thumb.jpg';
 import project4 from './project-4/thumb.jpg';
@@ -62,7 +62,6 @@ function Home() {
     <main>
       <div className="nav-gap"></div>
       <header className="home-header">
-        {/* TEXT */}
         <div className="home-title-header">
           <div className="home-title-content">
             <div className="text-wrapper-xs">
@@ -74,7 +73,6 @@ function Home() {
               <IconDownload />
             </button>
           </div>
-          {/* IMAGE */}
           <div className="home-title-img-wrapper">
             <img src={Cursor} alt="cursor symbol" />
           </div>
